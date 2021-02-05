@@ -1,0 +1,371 @@
+.HeaderLists:nth-of-type(1) .HeaderNavBar {
+    width: 100%;
+}
+
+#MainSliderCont {
+    width: 100%;
+    overflow: hidden;
+}
+
+#MainSlider {
+    width: 100%;
+    width: 100%;
+    height: 37vw;
+    background: #060606;
+    margin-bottom: 30px;
+}
+
+    #MainSlider .slick-list {
+        background: url('../Images/Loader.gif') no-repeat 50% 45%;
+    }
+
+    #MainSlider .slick-next {
+        background: url('../Images/Icons/Chevrons.png') no-repeat 120% 0%;
+        background-size: cover;
+    }
+
+    #MainSlider .slick-prev {
+        background: url('../Images/Icons/Chevrons.png') no-repeat -20% 0%;
+        background-size: cover;
+    }
+
+    #MainSlider:hover .slick-prev,
+    #MainSlider:hover .slick-next {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+
+.MainSliderMaterials {
+    height: 37vw;
+    overflow: hidden;
+}
+
+.MainSliderLink {
+    height: inherit;
+    width: 100%;
+    display: inline-block;
+}
+
+    .MainSliderLink, .MainSliderLink:active,
+    .MainSliderLink:visited {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.MainSliderParag {
+    position: relative;
+    color: #fff;
+    font-size: 60px;
+    font-family: sans-serif;
+    top: 6.5vw;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    font-weight: bolder;
+}
+
+    .MainSliderParag span {
+        margin: 0px;
+        padding: 0px;
+        color: #fff;
+    }
+
+.MainSliderImg {
+    width: 100%;
+    height: inherit;
+    position: relative;
+    background-color: #0b0b0b;
+    background-position-x: 50%;
+    background-position-y: 25%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-origin: padding-box;
+    background-clip: border-box;
+}
+
+    .MainSliderImg img {
+        width: 100%;
+    }
+
+.BoxPrev {
+    width: 100%;
+    position: relative;
+    margin: 0px 0px 20px 0px;
+    min-height: 100px;
+}
+
+.BoxContainer {
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.BoxCont {
+    position: relative;
+    width: 45%;
+    height: 24vw;
+    display: inline-block;
+    margin: 2%;
+    perspective: 1500px;
+}
+
+    .BoxCont:hover .BoxCover {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+
+    .BoxCont:hover .BoxIcon {
+        top: 27%;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+
+.BoxLink {
+    height: inherit;
+    width: 100%;
+    display: inline-block;
+    box-shadow: 0px 0px 10px 0px rgb(170, 170, 170);
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    perspective: 1500px;
+    overflow: hidden;
+}
+
+    .BoxLink, .BoxLink:active,
+    .BoxLink:visited {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.BoxImg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #0d0d0d;
+    background-position-x: 50%;
+    background-position-y: 25%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-origin: padding-box;
+    background-clip: border-box;
+}
+
+.BoxCover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+    .BoxCover:hover {
+        background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(9, 37, 168, 1) 100%);
+    }
+
+.BoxData {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.BoxIcon {
+    width: 25%;
+    position: absolute;
+    top: 37%;
+    left: 37%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.ComponentsPrev {
+    width: 100%;
+    position: relative;
+    margin: 30px 0px;
+}
+
+    .ComponentsPrev::before {
+        content: ' ';
+        display: table;
+        box-sizing: inherit;
+    }
+
+    .ComponentsPrev::after {
+        content: ' ';
+        display: table;
+        box-sizing: inherit;
+        clear: both;
+    }
+
+.CompCont {
+    width: 50%;
+    position: relative;
+    float: right;
+}
+
+    .CompCont p {
+        font-family: roboto;
+        font-size: 18px;
+        line-height: 25px;
+        padding: 80px 30px;
+        margin: 0px;
+        color: #000;
+    }
+
+    .CompCont:first-of-type {
+        position: absolute;
+        right: 50%;
+        top: 0%;
+        height: 100%;
+        background-size: auto;
+        background-size: cover;
+    }
+
+.ComCont_img_1 {
+    background: url('../Images/Preview/AbstractParticles.jpg') no-repeat 50% 50%;
+}
+
+#PreviewContents {
+    width: 100%;
+}
+
+.PreviewRow {
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+
+    .PreviewRow::before {
+        content: ' ';
+        display: table;
+        box-sizing: inherit;
+    }
+
+    .PreviewRow::after {
+        content: ' ';
+        display: table;
+        box-sizing: inherit;
+        clear: both;
+    }
+
+    .PreviewRow:nth-of-type(2n) {
+        background: #fff;
+        direction: rtl;
+    }
+
+        .PreviewRow:nth-of-type(2n) .PreviewColumn {
+            float: right;
+        }
+
+            .PreviewRow:nth-of-type(2n) .PreviewColumn:nth-of-type(1) {
+                background: #0d0d0d;
+            }
+
+            .PreviewRow:nth-of-type(2n) .PreviewColumn:nth-of-type(2) {
+                position: absolute;
+                right: 50%;
+                height: 100%;
+                top: 0%;
+            }
+
+    .PreviewRow:nth-of-type(2n+1) {
+        background: #f7f7f7;
+        direction: ltr;
+    }
+
+        .PreviewRow:nth-of-type(2n+1) .PreviewColumn {
+            float: left;
+        }
+
+            .PreviewRow:nth-of-type(2n+1) .PreviewColumn:nth-of-type(1) {
+                background: #0d0d0d;
+            }
+
+            .PreviewRow:nth-of-type(2n+1) .PreviewColumn:nth-of-type(2) {
+                position: absolute;
+                left: 50%;
+                height: 100%;
+                top: 0%;
+            }
+
+.PreviewColumn {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.PreviewParag {
+    width: 100%;
+    direction: ltr;
+    position: relative;
+    padding: 40px 0px;
+}
+
+    .PreviewParag p:nth-of-type(1) {
+        font-size: 30px;
+        margin: 0;
+        padding: 5% 10%;
+        font-family: roboto;
+        color: #fff;
+    }
+
+    .PreviewParag p:nth-of-type(2) {
+        font-size: 18px;
+        margin: 0;
+        padding: 0% 10% 5% 10%;
+        font-family: roboto;
+        color: #fff;
+        line-height: 25px;
+    }
+
+    .PreviewParag a:link, .PreviewParag a:visited,
+    .PreviewParag a:active {
+        display: inline-block;
+        text-decoration: none;
+        font-family: roboto;
+        color: #000;
+        text-align: right;
+        font-size: 20px;
+        margin: 0% 0% 5% 10%;
+        padding: 10px 20px;
+        cursor: pointer;
+        border: 2px solid #fff;
+        background: #fff;
+        box-shadow: 0px 0px 0px 0px #7b7b7b;
+    }
+
+    .PreviewParag a:hover {
+        box-shadow: 0px 0px 15px -5px #7b7b7b;
+    }
+
+.PreviewImage {
+    width: 70%;
+    margin: 0 auto;
+    top: 15%;
+    text-align: center;
+    position: relative;
+}
+
+    .PreviewImage::before {
+        content: ' ';
+        display: table;
+        box-sizing: inherit;
+    }
+
+    .PreviewImage::after {
+        content: ' ';
+        display: table;
+        box-sizing: inherit;
+        clear: both;
+    }
+
+    .PreviewImage img {
+        width: 80%;
+        position: relative;
+    }

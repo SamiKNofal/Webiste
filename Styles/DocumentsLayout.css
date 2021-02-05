@@ -1,0 +1,105 @@
+.HeaderLists:nth-of-type(4) .HeaderNavBar {
+    width: 100%;
+}
+
+#DocumentsCont {
+    width: 100%;
+    position: relative;
+    padding: 30px 0px;
+}
+
+#DocumentsContainer {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+    #DocumentsContainer::before {
+        content: ' ';
+        display: table;
+        box-sizing: inherit;
+    }
+
+    #DocumentsContainer::after {
+        content: ' ';
+        display: table;
+        box-sizing: inherit;
+        clear: both;
+    }
+
+.DocumentsBlock {
+    width: 30%;
+    float: left;
+    border: solid 1px #ededed;
+    margin: 1.5%;
+    height: 320px;
+    position: relative;
+}
+
+.DocumentsBlockInner {
+    padding: 8%;
+}
+
+.DocumentIcon {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+    .DocumentIcon img {
+        width: inherit;
+        height: inherit;
+    }
+
+.DocumentTitle {
+    font-size: 25px;
+    font-family: roboto;
+    color: #000;
+    text-align: left;
+    padding: 10px;
+}
+
+    .DocumentTitle p {
+        padding: 0;
+        margin: 0;
+    }
+
+.DocumentInfo {
+    font-size: 15px;
+    font-family: roboto;
+    color: #5e5e5e;
+    text-align: left;
+    padding: 10px;
+    line-height: 25px;
+}
+
+    .DocumentInfo p {
+        padding: 0;
+        margin: 0;
+    }
+
+.DocumentLinks {
+    text-align: right;
+    position: absolute;
+    bottom: 30px;
+    right: 8%;
+}
+
+    .DocumentLinks a, .DocumentLinks a:active,
+    .DocumentLinks a:visited {
+        display: block;
+        text-decoration: none;
+        padding: 8px;
+        font-family: roboto;
+        display: inline-block;
+        margin: 5px 0px 5px 5px;
+        background: #d9d9d9;
+        color: #404040;
+        cursor: pointer;
+    }
+
+    .DocumentLinks a:hover {
+        background: #424242;
+        color: #fff;
+    }

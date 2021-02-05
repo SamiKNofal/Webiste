@@ -1,0 +1,182 @@
+﻿.HeaderLists:nth-of-type(3) .HeaderNavBar {
+    width: 100%;
+}
+
+#GallerySliderCont {
+    width: 100%;
+    padding: 30px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+#GallerySlider {
+    width: 100%;
+    overflow: hidden;
+}
+
+    #GallerySlider .slick-slide {
+        opacity: 0.9;
+        filter: alpha(opacity=90);
+        -webkit-transition: all 0.15s ease-in-out;
+        -moz-transition: all 0.15s ease-in-out;
+        -ms-transition: all 0.15s ease-in-out;
+        -o-transition: all 0.15s ease-in-out;
+        transition: all 0.15s ease-in-out;
+        filter: grayscale(100%);
+    }
+
+        #GallerySlider .slick-slide:hover {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            filter: grayscale(0%);
+        }
+
+    #GallerySlider .slick-current {
+        opacity: 1 !important;
+        filter: alpha(opacity=100) !important;
+        filter: grayscale(0%) !important;
+    }
+
+.GalleryMaterials {
+    height: 16vw;
+    overflow: hidden;
+}
+
+.GalleryLink {
+    display: block;
+    width: inherit;
+    height: inherit;
+}
+
+.GalleryImg {
+    width: 90%;
+    margin: 0 auto;
+    height: inherit;
+    position: relative;
+    background-color: #0b0b0b;
+    background-position-x: 50%;
+    background-position-y: 25%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-origin: padding-box;
+    background-clip: border-box;
+}
+
+.ImageViewerCont {
+    width: 100%;
+    position: relative;
+    margin: 20px 0px;
+    min-height: 100px;
+}
+
+.ImageViewer {
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ImageBox {
+    position: relative;
+    width: 31%;
+    height: 16vw;
+    display: inline-block;
+    margin: 1%;
+    perspective: 1500px;
+}
+
+    .ImageBox:hover .ImageBoxCover {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+
+    .ImageBox:hover .ImageLinkIcons {
+        top: 37.5%;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+
+.ImageBoxDiv {
+    height: inherit;
+    width: 100%;
+    border: 1px solid #fff;
+    transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    perspective: 1500px;
+    overflow: hidden;
+}
+
+.BoxLink, .BoxLink:active,
+.BoxLink:visited {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ImageBoxPrev {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #0d0d0d;
+    background-position-x: 50%;
+    background-position-y: 25%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-origin: padding-box;
+    background-clip: border-box;
+}
+
+.ImageBoxCover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    background: #0d0d0d;
+}
+
+.ImageBoxData {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.ImageLinkIcons {
+    width: 30%;
+    position: absolute;
+    top: 42%;
+    left: 35%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+    .ImageLinkIcons::before {
+        content: ' ';
+        display: table;
+        box-sizing: inherit;
+    }
+
+    .ImageLinkIcons::after {
+        content: ' ';
+        display: table;
+        box-sizing: inherit;
+        clear: both;
+    }
+
+    .ImageLinkIcons img {
+        float: left;
+        width: 40%;
+        margin: 5% 5%;
+        cursor: pointer;
+        opacity: 0.6;
+        filter: alpha(opacity=60);
+    }
+
+        .ImageLinkIcons img:hover {
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
