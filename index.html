@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head runat="server">
+
+    <title>
+        Home
+    </title>
+
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="Images/Favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="Images/Favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="Images/Favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="Images/Favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="Images/Favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="Images/Favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="Images/Favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="Images/Favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/Favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="Images/Favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="Images/Favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Images/Favicon/manifest.json">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="JavaScripts/MainScript.js"></script>
+    <script type="text/javascript" src="JavaScripts/SlickSlider.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="Styles/HomeLayout.css?v=1" />
+    <link rel="stylesheet" type="text/css" href="Styles/GlobalLayout.css?v=1" />
+    <link rel="stylesheet" type="text/css" href="Styles/SlickSlider.css?v=1" />
+    <link rel="stylesheet" type="text/css" href="Styles/SlickSliderTheme.css?v=1" />
+
+</head>
+
+
+<body id="Body">
+
+    <form id="WebForm" runat="server">
+
+        <div id="ScrollTop">
+            <img class="TxBeta" src="Images/Icons/ChevronUp.png" title="Scroll back up" />
+        </div>
+
+        <div id="SideMenu" class="TxOmega">
+
+            <div id="SideMenuCont">
+
+                <ul class="SideMenuTopNav">
+
+                    <li class="SideMenuTopList">
+                        <a class="DefLink " href="https://www.linkedin.com/in/sami-nofal-b51a4515b">
+                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+
+                    <li class="SideMenuTopList">
+                        <a class="SideMenuTopLink" href="https://github.com/SamiKNofal">
+                            <span>GitHub</span>
+                        </a>
+                    </li>
+
+                    <li class="SideMenuTopList">
+                        <div class="CurrentTime"><span></span></div>
+                    </li>
+
+                </ul>
+
+                <ul class="SideMenuNav">
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="index.html"><span>Home</span></a>
+                    </li>
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="Projects.html"><span>Projects</span></a>
+                    </li>
+
+                </ul>
+
+                <ul class="SideMenuNav">
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="Gallery.html"><span>Gallery</span></a>
+                    </li>
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="Documents.html"><span>Documents</span></a>
+                    </li>
+
+                </ul>
+
+                <ul class="SideMenuNav">
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="About.html"><span>About</span></a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div id="TopHeader">
+
+            <div id="TopHeaderContainer">
+
+                <div id="TopHeaderNav">
+
+                    <ul id="TopHeaderTab">
+
+                        <li class="TopHeaderLists">
+                            <div class="TopHeaderListCont TxAlpha">
+                                <a class="TopHeaderLink" href="https://www.linkedin.com/in/sami-nofal-b51a4515b">
+                                    <span>LinkedIn</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="TopHeaderLists">
+                            <div class="TopHeaderListCont TxAlpha">
+                                <a class="TopHeaderLink" href="https://github.com/SamiKNofal">
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="TopHeaderLists">
+                            <div class="TopHeaderListCont TxAlpha">
+                                <div class="CurrentTime">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="WebContainer">
+
+            <header id="Header" class="TxAlpha">
+
+                <div id="HeaderContainer">
+
+                    <div id="HeaderMenuIcon" class="TxAlpha">
+                        <div id="HeaderIcon">
+                            <div class="HeaderIconBar TxAlpha"></div>
+                            <div class="HeaderIconBar TxAlpha"></div>
+                        </div>
+                    </div>
+
+
+                    <div id="HeaderLogo">
+
+                        <a id="HeaderLogoLink" href="index.html">
+                            <img src="Images/Icons/Logo4.png" title="Logo" />
+                        </a>
+
+                    </div>
+
+
+                    <div id="HeaderNav">
+
+                        <ul id="HeaderTab">
+
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="index.html">
+                                        <span>Home</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="Projects.html">
+                                        <span>Projects</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="Gallery.html">
+                                        <span>Gallery</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="Documents.html">
+                                        <span>Documents</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="About.html">
+                                        <span>About</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <div id="WebContent">
+
+                <div id="MainSliderCont">
+
+                    <div id="MainSlider">
+
+                        <div class="MainSliderMaterials">
+                            <a href="Proj2.html" class="MainSliderLink">
+                                <div class="MainSliderImg" style="background-image:url('Images/MainSlider/Pic1.jpg')">
+                                    <div class="MainSliderParag"><span>Get full control access with Cerberus App.</span></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="MainSliderMaterials">
+                            <a href="Proj4.html" class="MainSliderLink">
+                                <div class="MainSliderImg" style="background-image:url('Images/MainSlider/Pic2.jpg')">
+                                    <div class="MainSliderParag"><span>Developing efficient & poweful code.</span></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="MainSliderMaterials">
+                            <a href="Proj1.html" class="MainSliderLink">
+                                <div class="MainSliderImg" style="background-image:url('Images/MainSlider/Pic3.jpg')">
+                                    <div class="MainSliderParag"><span>Cerberus Drone - Demonstarting the results of programming and engineering.</span></div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="BoxPrev">
+
+                    <div class="BoxContainer">
+
+                        <div class="BoxCont">
+                            <a href="#" class="BoxLink TxGamma">
+                                <div class="BoxImg TxSegma" style="background-image: url('Images/Preview/LRI/Box1_S.jpg')"></div>
+                                <div class="BoxCover TxAlpha">
+                                    <div class="BoxData">
+                                        <img class="BoxIcon TxBeta" src="Images/Icons/RaspPi.png" />
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="BoxCont">
+                            <a href="Proj1.html" class="BoxLink TxGamma">
+                                <div class="BoxImg TxSegma" style="background-image: url('Images/Preview/LRI/Box2_S.jpg')"></div>
+                                <div class="BoxCover TxAlpha">
+                                    <div class="BoxData">
+                                        <img class="BoxIcon TxBeta" src="Images/Icons/Processor.png" />
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="BoxCont">
+                            <a href="Proj2.html" class="BoxLink TxGamma">
+                                <div class="BoxImg TxSegma" style="background-image: url('Images/Preview/LRI/Box3_S.jpg')"></div>
+                                <div class="BoxCover TxAlpha">
+                                    <div class="BoxData">
+                                        <img class="BoxIcon TxBeta" src="Images/Icons/Code.png" />
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="BoxCont">
+                            <a href="Proj4.html" class="BoxLink TxGamma">
+                                <div class="BoxImg TxSegma" style="background-image: url('Images/Preview/LRI/Box4_S.jpg')"></div>
+                                <div class="BoxCover TxAlpha">
+                                    <div class="BoxData">
+                                        <img class="BoxIcon TxBeta" src="Images/Icons/MATLAB.png" />
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="BlackBg">
+
+                    <div class="CoverMaterialCont">
+
+                        <div class="CoverMaterial HomeCoverMaterial">
+
+                            <div class="CoverMaterialTxt">
+
+                                <p>
+                                    Utilizing the best software tools.
+                                </p>
+
+                                <p>
+                                    Experienced designing and developing mobile applications and websites that follow the standard
+                                    guidlines. Allowing cross-device and cross-browser compatability by planning the solution
+                                    thoroughly using the right approach to meet the desired expectations.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="VideoPreviewCont TxAlpha">
+
+                        <div class="VideoPreview TxAlpha">
+
+                            <video class="Video TxAlpha" autoplay loop muted playsinline -webkit-playsinline preload="none" poster="Videos/ApplicationPreview.jpg">
+                                <source src="Videos/ApplicationPreview.mp4" type="video/mp4">
+                                <source src="Videos/ApplicationPreview.ogg" type="video/ogg">
+                                Your browser does not support videos.
+                            </video>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <footer id="Footer">
+
+                <div id="FooterBar">
+                    <div class="FooterSubBar TxBeta"></div>
+                </div>
+
+                <div id="FooterContHolder">
+
+                    <div id="FooterCont">
+
+                        <div id="FooterInnerCont">
+
+                            <div class="FooterColumnTab">
+
+                                <ul class="FooterTabList">
+
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="index.html"><span>Home</span></a>
+                                    </li>
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="Projects.html"><span>Projects</span></a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="FooterColumnTab">
+
+                                <ul class="FooterTabList">
+
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="Gallery.html"><span>Gallery</span></a>
+                                    </li>
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="Documents.html"><span>Documents</span></a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="FooterColumnTab">
+
+                                <ul class="FooterTabList">
+
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="About.html"><span>About</span></a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                            <div class="FooterColumnTab">
+
+                                <div id="NetworkingCont">
+
+                                    <div class="NetworkingRowTab">
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" target="_blank" href="https://github.com/SamiKNofal">
+                                                <img class="TxAlpha" src="Images/Icons/GitHubIcon.png" title="GitHub" />
+                                            </a>
+                                        </div>
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" target="_blank" href="About.html">
+                                                <img class="TxAlpha" src="Images/Icons/SkypeIcon.png" title="Skype" />
+                                            </a>
+                                        </div>
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" target="_blank" href="https://www.youtube.com/channel/UCguDpQ9yTB939eb9hWQ1LCg?view_as=subscriber">
+                                                <img class="TxAlpha" src="Images/Icons/YouTubeIcon.png" title="YouTube" />
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="NetworkingRowTab">
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" target="_blank" href="https://www.linkedin.com/in/sami-nofal-b51a4515b">
+                                                <img class="TxAlpha" src="Images/Icons/LinkedInIcon.png" title="LinkedIn" />
+                                            </a>
+                                        </div>
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" href="https://twitter.com/SamiKNofal">
+                                                <img class="TxAlpha" src="Images/Icons/TwitterIcon.png" title="Twitter" />
+                                            </a>
+                                        </div>
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" href="About.html">
+                                                <img class="TxAlpha" src="Images/Icons/PhoneIcon.png" title="Call" />
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div id="FooterCopyRight">Designed & developed by Sami Nofal.</div>
+
+                    </div>
+
+                </div>
+
+            </footer>
+
+
+        </div>
+
+    </form>
+
+</body>
+
+
+</html>

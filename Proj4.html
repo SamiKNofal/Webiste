@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head runat="server">
+
+    <title>
+        Plant Bot
+    </title>
+
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="Images/Favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="Images/Favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="Images/Favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="Images/Favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="Images/Favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="Images/Favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="Images/Favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="Images/Favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/Favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="Images/Favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="Images/Favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Images/Favicon/manifest.json">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="JavaScripts/MainScript.js"></script>
+    <script type="text/javascript" src="JavaScripts/SlickSlider.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="Styles/ProjectsLayout.css?v=1" />
+    <link rel="stylesheet" type="text/css" href="Styles/GlobalLayout.css?v=1" />
+    <link rel="stylesheet" type="text/css" href="Styles/SlickSlider.css?v=1" />
+    <link rel="stylesheet" type="text/css" href="Styles/SlickSliderTheme.css?v=1" />
+
+</head>
+
+
+<body id="Body">
+
+    <form id="WebForm" runat="server">
+
+        <div id="ScrollTop">
+            <img class="TxBeta" src="Images/Icons/ChevronUp.png" title="Scroll back up" />
+        </div>
+
+        <div id="SideMenu" class="TxOmega">
+
+            <div id="SideMenuCont">
+
+                <ul class="SideMenuTopNav">
+
+                    <li class="SideMenuTopList">
+                        <a class="DefLink " href="https://www.linkedin.com/in/sami-nofal-b51a4515b">
+                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+
+                    <li class="SideMenuTopList">
+                        <a class="SideMenuTopLink" href="https://github.com/SamiKNofal">
+                            <span>GitHub</span>
+                        </a>
+                    </li>
+
+                    <li class="SideMenuTopList">
+                        <div class="CurrentTime"><span></span></div>
+                    </li>
+
+                </ul>
+
+                <ul class="SideMenuNav">
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="index.html"><span>Home</span></a>
+                    </li>
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="Projects.html"><span>Projects</span></a>
+                    </li>
+
+                </ul>
+
+                <ul class="SideMenuNav">
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="Gallery.html"><span>Gallery</span></a>
+                    </li>
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="Documents.html"><span>Documents</span></a>
+                    </li>
+
+                </ul>
+
+                <ul class="SideMenuNav">
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="About.html"><span>About</span></a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div id="TopHeader">
+
+            <div id="TopHeaderContainer">
+
+                <div id="TopHeaderNav">
+
+                    <ul id="TopHeaderTab">
+
+                        <li class="TopHeaderLists">
+                            <div class="TopHeaderListCont TxAlpha">
+                                <a class="TopHeaderLink" href="https://www.linkedin.com/in/sami-nofal-b51a4515b">
+                                    <span>LinkedIn</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="TopHeaderLists">
+                            <div class="TopHeaderListCont TxAlpha">
+                                <a class="TopHeaderLink" href="https://github.com/SamiKNofal">
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="TopHeaderLists">
+                            <div class="TopHeaderListCont TxAlpha">
+                                <div class="CurrentTime">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="WebContainer">
+
+            <header id="Header" class="TxAlpha">
+
+                <div id="HeaderContainer">
+
+                    <div id="HeaderMenuIcon" class="TxAlpha">
+                        <div id="HeaderIcon">
+                            <div class="HeaderIconBar TxAlpha"></div>
+                            <div class="HeaderIconBar TxAlpha"></div>
+                        </div>
+                    </div>
+
+
+                    <div id="HeaderLogo">
+
+                        <a id="HeaderLogoLink" href="index.html">
+                            <img src="Images/Icons/Logo4.png" title="Logo" />
+                        </a>
+
+                    </div>
+
+
+                    <div id="HeaderNav">
+
+                        <ul id="HeaderTab">
+
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="index.html">
+                                        <span>Home</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="Projects.html">
+                                        <span>Projects</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="Gallery.html">
+                                        <span>Gallery</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="Documents.html">
+                                        <span>Documents</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="About.html">
+                                        <span>About</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <div id="WebContent">
+
+                <div class="WebBanner ProjectsBanner" style="background-image:url('Images/Banners/Proj4.jpg')">
+                    <div class="WebBannerBox"><p class="WebBannerTitle">Z BUS MATRIX</p></div>
+                </div>
+
+                <div class="GoldStrip"></div>
+
+                <div class="SectionImg">
+                    <div class="SectionImgHolder"><img src="Images/Icons/MATLAB.png" title="Logo" /></div>
+                </div>
+
+                <div class="SectionTxt">
+
+                    <div class="SectionTxtCont">
+
+                        <div class="SectionTitle">Z bus matrix using the buildup algorithm.</div>
+                        <div class="SectionParag">
+                            Z bus is bus impedance matrix which is used in Fault analysis. This matrix helps in finding the values of
+                            fault current. The elements of matrix are the impedances of transmission line connected between two buses.
+                            Z Matrix or bus impedance matrix is an important tool in power system analysis. Though, it is not frequently
+                            used in power flow study, unlike Y bus matrix, it is, however, an important tool in other power system studies
+                            like short circuit analysis or fault study. The Z bus matrix can be computed by matrix inversion of the Y bus matrix.
+                            Since the Y bus matrix is usually sparse, the explicit Z bus matrix would by dense so memory intensive to handle directly.
+                            By using MATLAB's matrix manipulations, we can create a script with multiple sequential lines of MATLAB commands to develope
+                            a program to caluclate the Z bus matrix using the buildup algorithm. The script is written to ensure both efficiency and
+                            resiliency providing that the user has no background knowledge of programming or coding.
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="SectionSubTxt">
+
+                    <div class="SectionSubTxtCont">
+
+                        <div class="SectionSubTitle">Code Structure</div>
+
+                        <div class="SectionSubParag">
+                            Before writting the code, we should first understand the procedure behind the buildup algorithm.
+                            Provided that a single-line power diagram is available, the user is required to enter both the number
+                            of branches and busbars as shown on their system. To specify the connection type between each branch,
+                            the following input numbers are used:
+                        </div>
+
+                        <div class="SectionSubList">
+                            <ul>
+                                <li>1  The branch is connected from a new bus to reference.</li>
+                                <li>2  The branch is connected from an existing bus to new bus.</li>
+                                <li>3  The branch is connected from an existing bus to reference.</li>
+                                <li>4  The branch is connected from a existing bus to another existing bus.</li>
+                            </ul>
+                        </div>
+
+                        <div class="SectionSubParag">
+                            The following MATLAB code summurizes the above discussion:
+                        </div>
+
+                        <div class="SectionSubCode">
+                            <div class="SSCHolder">
+                                <div class="CodeNavHolder">
+                                    <ul class="CodeNav">
+                                        <li class="SelectCode CodeNavList">
+                                            <img src="Images/Icons/Outline.png" title="Select code" />
+                                        </li>
+                                        <li class="CopyCode CodeNavList TxAlpha">
+                                            <img src="Images/Icons/Copy.png" title="Copy code" />
+                                        </li>
+                                        <li class="ZoomInCode CodeNavList TxAlpha">
+                                            <img src="Images/Icons/ZoomIn.png" title="Zoom in" />
+                                        </li>
+                                        <li class="ZoomOutCode CodeNavList TxAlpha">
+                                            <img src="Images/Icons/ZoomOut.png" title="Zoom out" />
+                                        </li>
+                                        <li class="ZoomDefCode CodeNavList TxAlpha">
+                                            <img src="Images/Icons/ZoomDef.png" title="Default zoom" />
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="CodeTxtHolder">
+                                    <pre class="CodeTxt TxAlpha">disp('The following code calculates the Z-bus matrix using the buildup algorithm.');
+disp('Developed by Sami Khaled Nofal, ID: 0138086, Faculty of Engineering and Technoogy - The University of Jordan.');
+disp('To specify the connection type between each branch use the following inputs:');
+disp('(1) - A branch is connected from a new bus to reference.');
+disp('(2) - A branch is connected from an existing bus to new bus.');
+disp('(3) - A branch is connected from an existing bus to reference.');
+disp('(4) - A branch is connected from an existing bus to another existing bus.');
+
+Branches = input('Please enter the number of branches: ');
+BusBars = input('Please enter the number of busbars: ');</pre>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="SectionSubParag">
+                            Once the user specifies the number of branches and busbars, the next step is to iterarte through all
+                            branches and request the impedance of each branch as well as the connection type. Both the impedance
+                            and connection type are stored on a separate matrices to be used in the calculation step. With each iteration
+                            the system shows the user their input impedance and which branch(s) the impedance is located. This provides an
+                            insight for the user to insure that their data is stored correctly. A special case is handled when there exist
+                            only one branch in the system where the the Z bus matrix is a single 1x1 matrix. The following MATLAB code
+                            summurizes this process:
+                        </div>
+
+                        <div class="SectionSubCode">
+                            <div class="SSCHolder">
+                                <div class="CodeNavHolder">
+                                    <ul class="CodeNav">
+                                        <li class="SelectCode CodeNavList">
+                                            <img src="Images/Icons/Outline.png" title="Select code" />
+                                        </li>
+                                        <li class="CopyCode CodeNavList TxAlpha">
+                                            <img src="Images/Icons/Copy.png" title="Copy code" />
+                                        </li>
+                                        <li class="ZoomInCode CodeNavList TxAlpha">
+                                            <img src="Images/Icons/ZoomIn.png" title="Zoom in" />
+                                        </li>
+                                        <li class="ZoomOutCode CodeNavList TxAlpha">
+                                            <img src="Images/Icons/ZoomOut.png" title="Zoom out" />
+                                        </li>
+                                        <li class="ZoomDefCode CodeNavList TxAlpha">
+                                            <img src="Images/Icons/ZoomDef.png" title="Default zoom" />
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="CodeTxtHolder">
+                                    <pre class="CodeTxt TxAlpha">for i = 1:Branches
+    if i == 1
+        disp('Insert the impedance of branch #');
+        disp(i);
+        Impedance(i) = input('Impedance: ');
+        disp('Busbar 1 to reference impedance: ');
+        disp(Impedance(i));
+        disp('----------------------------------------');
+        Zbus = [Impedance(i)];
+        v = v + 1;
+    else
+        disp('Insert the impedance of branch #');
+        disp(i);
+        Impedance(i) = input('Impedance: ');
+        disp('Insert the branch connection condition');
+        Condition(i) = input('Condition: ');
+        if Condition(i) == 4 
+            disp('Insert the number of the two existng busbars connection in order.');
+            BusBarCon(Alpha+1) = input('First busbar: ');
+            Alpha = Alpha+1;
+            BusBarCon(Alpha+1) = input('Second busbar: ');
+            Alpha = Alpha+1;
+        end
+        switch Condition(i)
+            case 1
+                v = v + 1;
+                disp('New busbar to reference.');
+                disp('Busbar number: ');
+                disp(v);
+                disp('With impedance: ');
+            case 2
+                v = v + 1;
+                disp('Existing busbar to new busbar');
+                disp('Existing busbar: ');
+                disp(v-1);
+                disp('New busbar: ');
+                disp(v);
+                disp('With impedance: ');
+                disp(Impedance(i));
+            case 3
+                disp('Existing busbar to ref');
+                disp('Busbar number: ');
+                disp(v);
+                disp('With impedance: ');
+                disp(Impedance(i));
+            case 4
+                disp('Existing busbar to another existing busbar');
+                disp('1st existing busbar number: ');
+                disp(BusBarCon(Beta+1));
+                Beta = Beta + 1;
+                disp('2nd existing busbar number: ');
+                disp(BusBarCon(Beta+1));
+                Beta = Beta + 1;
+                disp('With impedance: ');
+                disp(Impedance(i));
+        end
+        disp('----------------------------------------');
+    end
+end</pre>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="SectionSubParag">
+                            The final step is to calculate the Z bus impedance based on the values and conditions given by the user.
+                            Using the buildup algorithm, the system begins to iterarte through each branch and calculate the matrix.
+                            The Z bus matrix is calculated irrespective of the system size. Once calculation is done, both the Z bus and
+                            Y bus (inverse of Z bus) matrices are given. The following MATLAB code summurizes the final process:
+                        </div>
+
+                        <div class="SectionSubCode">
+                            <div class="SSCHolder">
+                                <div class="CodeNavHolder">
+                                    <ul class="CodeNav">
+                                        <li class="SelectCode CodeNavList">
+                                            <img src="Images/Icons/Outline.png" title="Select code" />
+                                        </li>
+                                        <li class="CopyCode CodeNavList TxAlpha">
+                                            <img src="Images/Icons/Copy.png" title="Copy code" />
+                                        </li>
+                                        <li class="ZoomInCode CodeNavList TxAlpha">
+                                            <img src="Images/Icons/ZoomIn.png" title="Zoom in" />
+                                        </li>
+                                        <li class="ZoomOutCode CodeNavList TxAlpha">
+                                            <img src="Images/Icons/ZoomOut.png" title="Zoom out" />
+                                        </li>
+                                        <li class="ZoomDefCode CodeNavList TxAlpha">
+                                            <img src="Images/Icons/ZoomDef.png" title="Default zoom" />
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="CodeTxtHolder">
+                                    <pre class="CodeTxt TxAlpha">for i = 2:Branches
+    switch Condition(i)
+        case 1
+            M_Size = size(Zbus);
+            Zbus(M_Size(1)+1, M_Size(2)+1) = 0;
+            M_Size = size(Zbus);
+            Zbus(M_Size(1), M_Size(2)) = Impedance(i);
+        case 2
+            M_Size = size(Zbus);
+            Zbus(:, M_Size(2)+1) = Zbus(:, M_Size(2));
+            Zbus(M_Size(1)+1, :) = Zbus(M_Size(1), :);
+            M_Size = size(Zbus);
+            Zbus(M_Size(1), M_Size(2)) = 0;
+            Zbus(M_Size(1), M_Size(2)) = Impedance(i)+Zbus(M_Size(1)-1, M_Size(2)-1);
+        case 3
+            M_Size = size(Zbus);
+            Zbus(:, M_Size(2)+1) = Zbus(:, M_Size(2));
+            Zbus(M_Size(1)+1, :) = Zbus(M_Size(1), :);
+            M_Size = size(Zbus);
+            Zbus(M_Size(1), M_Size(2)) = 0;
+            Zbus(M_Size(1), M_Size(2)) = Impedance(i)+Zbus(M_Size(1)-1, M_Size(2)-1);
+            M_Size = size(Zbus);
+            for k = 1:(M_Size(1)-1)
+                for j = 1:(M_Size(1)-1)
+                    Zbus(k, j) =  Zbus(k, j) - ((Zbus(k, M_Size(1)))*(Zbus(M_Size(1), j))/Zbus(M_Size(1), M_Size(2)));
+                end
+            end
+            Zbus(M_Size(1), :) = [];
+            Zbus(:, M_Size(2)) = [];
+        case 4
+            j = BusBarCon(Alpha+1);
+            Alpha = Alpha+1;
+            k = BusBarCon(Alpha+1);
+            Alpha = Alpha+1;
+            M_Size = size(Zbus);
+            Zbus(:, M_Size(2)+1) = Zbus(:, j) - Zbus(:, k);
+            Zbus(M_Size(1)+1, :) = Zbus(j ,:) - Zbus(k ,:);
+            M_Size = size(Zbus);
+            Zbus(M_Size(1), M_Size(2)) = Zbus(j, j) + Zbus(k, k) + Impedance(i) - 2*Zbus(j, k);
+            M_Size = size(Zbus);
+            for k = 1:(M_Size(1))
+                for j = 1:(M_Size(1))
+                    Zbus(k, j) =  Zbus(k, j) - ((Zbus(k, M_Size(1)))*(Zbus(M_Size(1), j))/Zbus(M_Size(1), M_Size(2)));
+                end
+            end
+            Zbus(M_Size(1), :) = [];
+            Zbus(:, M_Size(2)) = [];
+    end 
+end
+Zbus = Zbus
+Ybus = inv(Zbus)</pre>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="SectionSubTxt">
+                    <div class="SectionSubTxtCont">
+
+                        <div class="SectionSubTitle">Get Link Access</div>
+                        <div class="SectionSubParag">
+                            You can view the complete code from the following link
+                        </div>
+                        <div class="SectionSubLink">
+                            <a class="TxAlpha" href="https://github.com/SamiKNofal/MATLAB/blob/master/Scripts/ZbusCal.m">View code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="SectionTxt">
+                    <div class="SectionTxtCont">
+                        <div class="SectionTitle">Discover more</div>
+                    </div>
+                </div>
+
+                <div id="ItemsAreaCont">
+
+                    <div id="ItemsArea">
+
+                        <a href="Proj1.html" class="ItemsAreaHolder DefLink">
+                            <div class="ItemsAreaMaterial DefLink">
+                                <div class="IAMSub TxAlpha">
+                                    <div class="IAMInner">
+                                        <div class="ItemsAreaImg"><img src="Images/Icons/Drone.png" title="Icon" /></div>
+                                        <div class="ItemsAreaTitle">Cerberus Drone</div>
+                                        <div class="ItemsAreaParag">
+                                            To reflects the in-depth learning and relate to the academic goals, the senior graduation
+                                            project is meant to provide a system that can be beneficial for mankind. Cerberus Drone is
+                                            the product of this idea. A search and rescue drone equiped with 5 ADC channels, sensor fusion,
+                                            and a dedicted Android application.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="proj2.html" class="ItemsAreaHolder DefLink">
+                            <div class="ItemsAreaMaterial DefLink">
+                                <div class="IAMSub TxAlpha">
+                                    <div class="IAMInner">
+                                        <div class="ItemsAreaImg"><img src="Images/Icons/Android.png" title="Icon" /></div>
+                                        <div class="ItemsAreaTitle">Cerberus Drone App</div>
+                                        <div class="ItemsAreaParag">
+                                            Cerberus Drone Application is a dedicated app designed to communicate with the drone by adjusting control
+                                            parameters in real time, display a graphical plot of the onboard sensors' data, pinpoint the drone location
+                                            on map, toggling electronics within the system, and more.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <footer id="Footer">
+
+                <div id="FooterBar">
+                    <div class="FooterSubBar TxBeta"></div>
+                </div>
+
+                <div id="FooterContHolder">
+
+                    <div id="FooterCont">
+
+                        <div id="FooterInnerCont">
+
+                            <div class="FooterColumnTab">
+
+                                <ul class="FooterTabList">
+
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="index.html"><span>Home</span></a>
+                                    </li>
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="Projects.html"><span>Projects</span></a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="FooterColumnTab">
+
+                                <ul class="FooterTabList">
+
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="Gallery.html"><span>Gallery</span></a>
+                                    </li>
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="Documents.html"><span>Documents</span></a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="FooterColumnTab">
+
+                                <ul class="FooterTabList">
+
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="About.html"><span>About</span></a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                            <div class="FooterColumnTab">
+
+                                <div id="NetworkingCont">
+
+                                    <div class="NetworkingRowTab">
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" target="_blank" href="https://github.com/SamiKNofal">
+                                                <img class="TxAlpha" src="Images/Icons/GitHubIcon.png" title="GitHub" />
+                                            </a>
+                                        </div>
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" target="_blank" href="About.html">
+                                                <img class="TxAlpha" src="Images/Icons/SkypeIcon.png" title="Skype" />
+                                            </a>
+                                        </div>
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" target="_blank" href="https://www.youtube.com/channel/UCguDpQ9yTB939eb9hWQ1LCg?view_as=subscriber">
+                                                <img class="TxAlpha" src="Images/Icons/YouTubeIcon.png" title="YouTube" />
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="NetworkingRowTab">
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" target="_blank" href="https://www.linkedin.com/in/sami-nofal-b51a4515b">
+                                                <img class="TxAlpha" src="Images/Icons/LinkedInIcon.png" title="LinkedIn" />
+                                            </a>
+                                        </div>
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" href="https://twitter.com/SamiKNofal">
+                                                <img class="TxAlpha" src="Images/Icons/TwitterIcon.png" title="Twitter" />
+                                            </a>
+                                        </div>
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" href="About.html">
+                                                <img class="TxAlpha" src="Images/Icons/PhoneIcon.png" title="Call" />
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div id="FooterCopyRight">Designed & developed by Sami Nofal.</div>
+
+                    </div>
+
+                </div>
+
+            </footer>
+
+
+        </div>
+
+    </form>
+
+</body>
+
+
+</html>

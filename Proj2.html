@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head runat="server">
+
+    <title>
+        Cerberus App
+    </title>
+
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="Images/Favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="Images/Favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="Images/Favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="Images/Favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="Images/Favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="Images/Favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="Images/Favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="Images/Favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/Favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="Images/Favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="Images/Favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Images/Favicon/manifest.json">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="JavaScripts/MainScript.js"></script>
+    <script type="text/javascript" src="JavaScripts/SlickSlider.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="Styles/ProjectsLayout.css?v=1" />
+    <link rel="stylesheet" type="text/css" href="Styles/GlobalLayout.css?v=1" />
+    <link rel="stylesheet" type="text/css" href="Styles/SlickSlider.css?v=1" />
+    <link rel="stylesheet" type="text/css" href="Styles/SlickSliderTheme.css?v=1" />
+
+</head>
+
+
+<body id="Body">
+
+    <form id="WebForm" runat="server">
+
+        <div id="ScrollTop">
+            <img class="TxBeta" src="Images/Icons/ChevronUp.png" title="Scroll back up" />
+        </div>
+
+        <div id="SideMenu" class="TxOmega">
+
+            <div id="SideMenuCont">
+
+                <ul class="SideMenuTopNav">
+
+                    <li class="SideMenuTopList">
+                        <a class="DefLink " href="https://www.linkedin.com/in/sami-nofal-b51a4515b">
+                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+
+                    <li class="SideMenuTopList">
+                        <a class="SideMenuTopLink" href="https://github.com/SamiKNofal">
+                            <span>GitHub</span>
+                        </a>
+                    </li>
+
+                    <li class="SideMenuTopList">
+                        <div class="CurrentTime"><span></span></div>
+                    </li>
+
+                </ul>
+
+                <ul class="SideMenuNav">
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="index.html"><span>Home</span></a>
+                    </li>
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="Projects.html"><span>Projects</span></a>
+                    </li>
+
+                </ul>
+
+                <ul class="SideMenuNav">
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="Gallery.html"><span>Gallery</span></a>
+                    </li>
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="Documents.html"><span>Documents</span></a>
+                    </li>
+
+                </ul>
+
+                <ul class="SideMenuNav">
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="About.html"><span>About</span></a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div id="TopHeader">
+
+            <div id="TopHeaderContainer">
+
+                <div id="TopHeaderNav">
+
+                    <ul id="TopHeaderTab">
+
+                        <li class="TopHeaderLists">
+                            <div class="TopHeaderListCont TxAlpha">
+                                <a class="TopHeaderLink" href="https://www.linkedin.com/in/sami-nofal-b51a4515b">
+                                    <span>LinkedIn</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="TopHeaderLists">
+                            <div class="TopHeaderListCont TxAlpha">
+                                <a class="TopHeaderLink" href="https://github.com/SamiKNofal">
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="TopHeaderLists">
+                            <div class="TopHeaderListCont TxAlpha">
+                                <div class="CurrentTime">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="WebContainer">
+
+            <header id="Header" class="TxAlpha">
+
+                <div id="HeaderContainer">
+
+                    <div id="HeaderMenuIcon" class="TxAlpha">
+                        <div id="HeaderIcon">
+                            <div class="HeaderIconBar TxAlpha"></div>
+                            <div class="HeaderIconBar TxAlpha"></div>
+                        </div>
+                    </div>
+
+
+                    <div id="HeaderLogo">
+
+                        <a id="HeaderLogoLink" href="index.html">
+                            <img src="Images/Icons/Logo4.png" title="Logo" />
+                        </a>
+
+                    </div>
+
+
+                    <div id="HeaderNav">
+
+                        <ul id="HeaderTab">
+
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="index.html">
+                                        <span>Home</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="Projects.html">
+                                        <span>Projects</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="Gallery.html">
+                                        <span>Gallery</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="Documents.html">
+                                        <span>Documents</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="About.html">
+                                        <span>About</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <div id="WebContent">
+
+                <div class="WebBanner ProjectsBanner" style="background-image:url('Images/Banners/Proj2.jpg')">
+                    <div class="WebBannerBox"><p class="WebBannerTitle">CERBERUS APP</p></div>
+                </div>
+
+                <div class="GoldStrip"></div>
+
+                <div class="SectionImg">
+                    <div class="SectionImgHolder"><img src="Images/Icons/Android.png" title="Logo" /></div>
+                </div>
+
+                <div class="SectionTxt">
+
+                    <div class="SectionTxtCont">
+
+                        <div class="SectionTitle">Cerberus Drone App.</div>
+                        <div class="SectionParag">
+                            Enhancing the controllability and functionality of <b>Cerberus Drone</b> is an important aspect to offer users
+                            ease of accessability and customization. One way to achieve this goal is to provide a dedicated mobile
+                            companion app for the system to fully access the features of the drone on the go. This can be done by
+                            developing applications on the <b>Android</b> operating system. Android is a mobile operating system
+                            developed by <b>Google</b>, based on a modified version of the <b>Linux</b> kernel and other open source
+                            software and designed primarily for touchscreen mobile devices such as smartphones and tablets. Applications
+                            are written using the Android software development kit (SDK) and, often, the Java programming language is used.
+                            To develop Android applications the <b>Android Studio</b> software tool is used. Android Studio is the integrated
+                            development environment (IDE) for Google's Android operating system, built on <b>JetBrains' IntelliJ IDEA</b>
+                            software and designed specifically for Android development.
+                        </div>
+                        <div class="SectionParag">
+                            By developing an Android App, namely <b>Cerberus Drone App</b>, it allows users to control multiple on-board
+                            electronic systems within the quadcopter, display a graphical representation of sensors' data, use the GPS
+                            functionality to pinpoint the device's location, configure the system's parameters and provide a backup virtual
+                            analog controller feature to allow resiliency in case any problem occur with the main hand-held controller as well
+                            as using it for prototype and testing purposes. Additional features can be added such as storage of data recieved from
+                            the drone as XML file formate, displaying weather forcast to notify the user if the weather conditions are suitable for
+                            flying the drone or not and other enhanced features that may prove to be useful for the user's experience.
+                        </div>
+                        <div class="SectionParag">
+                            This added application feature also display the programming skills gained from job experince and how I applied
+                            them for Cerberus Drone project to combine both software and hardware knowledge.
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="SectionTxt">
+                    <div class="SectionTxtCont">
+                        <div class="SectionTitle">Discover more</div>
+                    </div>
+                </div>
+
+                <div id="ItemsAreaCont">
+
+                    <div id="ItemsArea">
+
+                        <a href="Proj1.html" class="ItemsAreaHolder DefLink">
+                            <div class="ItemsAreaMaterial DefLink">
+                                <div class="IAMSub TxAlpha">
+                                    <div class="IAMInner">
+                                        <div class="ItemsAreaImg"><img src="Images/Icons/Drone.png" title="Icon" /></div>
+                                        <div class="ItemsAreaTitle">Cerberus Drone</div>
+                                        <div class="ItemsAreaParag">
+                                            To reflects the in-depth learning and relate to the academic goals, the senior graduation
+                                            project is meant to provide a system that can be beneficial for mankind. Cerberus Drone is
+                                            the product of this idea. A search and rescue drone equiped with 5 ADC channels, sensor fusion,
+                                            and a dedicted Android application.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="Proj4.html" class="ItemsAreaHolder DefLink">
+                            <div class="ItemsAreaMaterial DefLink">
+                                <div class="IAMSub TxAlpha">
+                                    <div class="IAMInner">
+                                        <div class="ItemsAreaImg"><img src="Images/Icons/Variable.png" title="Icon" /></div>
+                                        <div class="ItemsAreaTitle">Z Bus Matrix of Transmission Line</div>
+                                        <div class="ItemsAreaParag">
+                                            Using MATLAB to create a script to calculate the Z Bus Matrix impedance of a power transmission line.
+                                            The script is programmed to help the user to easily insert the value of each impedance between buses
+                                            without any knowledge of programming or difficulties.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <footer id="Footer">
+
+                <div id="FooterBar">
+                    <div class="FooterSubBar TxBeta"></div>
+                </div>
+
+                <div id="FooterContHolder">
+
+                    <div id="FooterCont">
+
+                        <div id="FooterInnerCont">
+
+                            <div class="FooterColumnTab">
+
+                                <ul class="FooterTabList">
+
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="index.html"><span>Home</span></a>
+                                    </li>
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="Projects.html"><span>Projects</span></a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="FooterColumnTab">
+
+                                <ul class="FooterTabList">
+
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="Gallery.html"><span>Gallery</span></a>
+                                    </li>
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="Documents.html"><span>Documents</span></a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="FooterColumnTab">
+
+                                <ul class="FooterTabList">
+
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="About.html"><span>About</span></a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                            <div class="FooterColumnTab">
+
+                                <div id="NetworkingCont">
+
+                                    <div class="NetworkingRowTab">
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" target="_blank" href="https://github.com/SamiKNofal">
+                                                <img class="TxAlpha" src="Images/Icons/GitHubIcon.png" title="GitHub" />
+                                            </a>
+                                        </div>
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" target="_blank" href="About.html">
+                                                <img class="TxAlpha" src="Images/Icons/SkypeIcon.png" title="Skype" />
+                                            </a>
+                                        </div>
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" target="_blank" href="https://www.youtube.com/channel/UCguDpQ9yTB939eb9hWQ1LCg?view_as=subscriber">
+                                                <img class="TxAlpha" src="Images/Icons/YouTubeIcon.png" title="YouTube" />
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="NetworkingRowTab">
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" target="_blank" href="https://www.linkedin.com/in/sami-nofal-b51a4515b">
+                                                <img class="TxAlpha" src="Images/Icons/LinkedInIcon.png" title="LinkedIn" />
+                                            </a>
+                                        </div>
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" href="https://twitter.com/SamiKNofal">
+                                                <img class="TxAlpha" src="Images/Icons/TwitterIcon.png" title="Twitter" />
+                                            </a>
+                                        </div>
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" href="About.html">
+                                                <img class="TxAlpha" src="Images/Icons/PhoneIcon.png" title="Call" />
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div id="FooterCopyRight">Designed & developed by Sami Nofal.</div>
+
+                    </div>
+
+                </div>
+
+            </footer>
+
+
+        </div>
+
+    </form>
+
+</body>
+
+
+</html>

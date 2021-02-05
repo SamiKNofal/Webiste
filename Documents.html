@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head runat="server">
+
+    <title>
+        Documents
+    </title>
+
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="Images/Favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="Images/Favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="Images/Favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="Images/Favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="Images/Favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="Images/Favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="Images/Favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="Images/Favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/Favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="Images/Favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="Images/Favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Images/Favicon/manifest.json">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="JavaScripts/MainScript.js"></script>
+    <script type="text/javascript" src="JavaScripts/SlickSlider.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="Styles/DocumentsLayout.css?v=1" />
+    <link rel="stylesheet" type="text/css" href="Styles/GlobalLayout.css?v=1" />
+    <link rel="stylesheet" type="text/css" href="Styles/SlickSlider.css?v=1" />
+    <link rel="stylesheet" type="text/css" href="Styles/SlickSliderTheme.css?v=1" />
+
+</head>
+
+
+<body id="Body">
+
+    <form id="WebForm" runat="server">
+
+        <div id="ScrollTop">
+            <img class="TxBeta" src="Images/Icons/ChevronUp.png" title="Scroll back up" />
+        </div>
+
+        <div id="SideMenu" class="TxOmega">
+
+            <div id="SideMenuCont">
+
+                <ul class="SideMenuTopNav">
+
+                    <li class="SideMenuTopList">
+                        <a class="DefLink " href="https://www.linkedin.com/in/sami-nofal-b51a4515b">
+                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+
+                    <li class="SideMenuTopList">
+                        <a class="SideMenuTopLink" href="https://github.com/SamiKNofal">
+                            <span>GitHub</span>
+                        </a>
+                    </li>
+
+                    <li class="SideMenuTopList">
+                        <div class="CurrentTime"><span></span></div>
+                    </li>
+
+                </ul>
+
+                <ul class="SideMenuNav">
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="index.html"><span>Home</span></a>
+                    </li>
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="Projects.html"><span>Projects</span></a>
+                    </li>
+
+                </ul>
+
+                <ul class="SideMenuNav">
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="Gallery.html"><span>Gallery</span></a>
+                    </li>
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="Documents.html"><span>Documents</span></a>
+                    </li>
+
+                </ul>
+
+                <ul class="SideMenuNav">
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="About.html"><span>About</span></a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div id="TopHeader">
+
+            <div id="TopHeaderContainer">
+
+                <div id="TopHeaderNav">
+
+                    <ul id="TopHeaderTab">
+
+                        <li class="TopHeaderLists">
+                            <div class="TopHeaderListCont TxAlpha">
+                                <a class="TopHeaderLink" href="https://www.linkedin.com/in/sami-nofal-b51a4515b">
+                                    <span>LinkedIn</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="TopHeaderLists">
+                            <div class="TopHeaderListCont TxAlpha">
+                                <a class="TopHeaderLink" href="https://github.com/SamiKNofal">
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="TopHeaderLists">
+                            <div class="TopHeaderListCont TxAlpha">
+                                <div class="CurrentTime">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="WebContainer">
+
+            <header id="Header" class="TxAlpha">
+
+                <div id="HeaderContainer">
+
+                    <div id="HeaderMenuIcon" class="TxAlpha">
+                        <div id="HeaderIcon">
+                            <div class="HeaderIconBar TxAlpha"></div>
+                            <div class="HeaderIconBar TxAlpha"></div>
+                        </div>
+                    </div>
+
+
+                    <div id="HeaderLogo">
+
+                        <a id="HeaderLogoLink" href="index.html">
+                            <img src="Images/Icons/Logo4.png" title="Logo" />
+                        </a>
+
+                    </div>
+
+
+                    <div id="HeaderNav">
+
+                        <ul id="HeaderTab">
+
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="index.html">
+                                        <span>Home</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="Projects.html">
+                                        <span>Projects</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="Gallery.html">
+                                        <span>Gallery</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="Documents.html">
+                                        <span>Documents</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="About.html">
+                                        <span>About</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <div id="WebContent">
+
+                <div class="WebBanner DocumentsBanner">
+                    <div class="WebBannerBox"><p class="WebBannerTitle">DOCUMENTS</p></div>
+                </div>
+
+                <div id="DocumentsCont">
+
+                    <div id="DocumentsContainer">
+
+                        <div class="DocumentsBlock">
+                            <div class="DocumentsBlockInner">
+                                <div class="DocumentIcon"><img src="Images/Icons/User.png" /></div>
+                                <div class="DocumentTitle"><p>Resume/CV</p></div>
+                                <div class="DocumentInfo"><p>Up-to-date resume containg a summery for my work and education</p></div>
+                                <div class="DocumentLinks">
+                                    <a class="TxAlpha" href="Documents/Resume_Sami_Nofal.pdf" target="_blank">Preview</a>
+                                    <a class="TxAlpha" href="Documents/Resume_Sami_Nofal.pdf" download>Download</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="DocumentsBlock">
+                            <div class="DocumentsBlockInner">
+                                <div class="DocumentIcon"><img src="Images/Icons/Student.png" /></div>
+                                <div class="DocumentTitle"><p>B.Sc. Degree English</p></div>
+                                <div class="DocumentInfo"><p>B.Sc. Electrical Engineer Degree - English Translated</p></div>
+                                <div class="DocumentLinks">
+                                    <a class="TxAlpha" href="Documents/Bachelor_Degree_Certificate_English_Sami_Nofal.pdf.pdf" target="_blank">Preview</a>
+                                    <a class="TxAlpha" href="Documents/Bachelor_Degree_Certificate_English_Sami_Nofal.pdf.pdf" download>Download</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="DocumentsBlock">
+                            <div class="DocumentsBlockInner">
+                                <div class="DocumentIcon"><img src="Images/Icons/Student.png" /></div>
+                                <div class="DocumentTitle"><p>B.Sc. Degree Arabic</p></div>
+                                <div class="DocumentInfo"><p>B.Sc. Electrical Engineer Degree - Arabic Translated</p></div>
+                                <div class="DocumentLinks">
+                                    <a class="TxAlpha" href="Documents/Bachelor_Degree_Certificate_Arabic_Sami_Nofal.pdf" target="_blank">Preview</a>
+                                    <a class="TxAlpha" href="Documents/Bachelor_Degree_Certificate_Arabic_Sami_Nofal.pdf" download>Download</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="DocumentsBlock">
+                            <div class="DocumentsBlockInner">
+                                <div class="DocumentIcon"><img src="Images/Icons/File.png" /></div>
+                                <div class="DocumentTitle"><p>Exp. Letter</p></div>
+                                <div class="DocumentInfo"><p>Software developer experience letter - Oriented Software (2014-2018)</p></div>
+                                <div class="DocumentLinks">
+                                    <a class="TxAlpha" href="Documents/Oriented_Software_Experience_Letter.pdf" target="_blank">Preview</a>
+                                    <a class="TxAlpha" href="Documents/Oriented_Software_Experience_Letter.pdf" download>Download</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="DocumentsBlock">
+                            <div class="DocumentsBlockInner">
+                                <div class="DocumentIcon"><img src="Images/Icons/Documents.png" /></div>
+                                <div class="DocumentTitle"><p>Graduation Project</p></div>
+                                <div class="DocumentInfo"><p>Documentation Documents for the B.Sc. senior graduation project.</p></div>
+                                <div class="DocumentLinks">
+                                    <a class="TxAlpha" href="Documents/Graduation_Project_Documentation_Design_of_Multifunctional_Quadcopter_System.pdf" target="_blank">Preview</a>
+                                    <a class="TxAlpha" href="Documents/Graduation_Project_Documentation_Design_of_Multifunctional_Quadcopter_System.pdf" download>Download</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="DocumentsBlock">
+                            <div class="DocumentsBlockInner">
+                                <div class="DocumentIcon"><img src="Images/Icons/File.png" /></div>
+                                <div class="DocumentTitle"><p>UK Status Outcome</p></div>
+                                <div class="DocumentInfo"><p>UK confirmation pre-settle status outcome.</p></div>
+                                <div class="DocumentLinks">
+                                    <a class="TxAlpha" href="Documents/Status_Outcome_Sami_Nofal.pdf" target="_blank">Preview</a>
+                                    <a class="TxAlpha" href="Documents/Status_Outcome_Sami_Nofal.pdf" download>Download</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                
+                <!-- Remove link access to documents for website beta version -->
+                <script type="text/javascript">
+                    $(document).ready(function () {
+
+                        try {
+                            var DocumentLinks = $('.DocumentLinks');
+                            var DocLink = DocumentLinks.find('a');
+                            DocLink.removeAttr('href').removeAttr('target').removeAttr('download');
+                            DocLink.click(function () {
+                                alert('Access to document links is not available during the beta version.' +
+                                    ' Please contact the web owner for any further information.');
+                            });
+                        }
+
+                        catch (e) {
+                            console.log(e);
+                        }
+
+                    });
+
+                </script>
+
+            </div>
+
+
+            <footer id="Footer">
+
+                <div id="FooterBar">
+                    <div class="FooterSubBar TxBeta"></div>
+                </div>
+
+                <div id="FooterContHolder">
+
+                    <div id="FooterCont">
+
+                        <div id="FooterInnerCont">
+
+                            <div class="FooterColumnTab">
+
+                                <ul class="FooterTabList">
+
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="index.html"><span>Home</span></a>
+                                    </li>
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="Projects.html"><span>Projects</span></a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="FooterColumnTab">
+
+                                <ul class="FooterTabList">
+
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="Gallery.html"><span>Gallery</span></a>
+                                    </li>
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="Documents.html"><span>Documents</span></a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="FooterColumnTab">
+
+                                <ul class="FooterTabList">
+
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="About.html"><span>About</span></a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                            <div class="FooterColumnTab">
+
+                                <div id="NetworkingCont">
+
+                                    <div class="NetworkingRowTab">
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" target="_blank" href="https://github.com/SamiKNofal">
+                                                <img class="TxAlpha" src="Images/Icons/GitHubIcon.png" title="GitHub" />
+                                            </a>
+                                        </div>
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" target="_blank" href="About.html">
+                                                <img class="TxAlpha" src="Images/Icons/SkypeIcon.png" title="Skype" />
+                                            </a>
+                                        </div>
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" target="_blank" href="https://www.youtube.com/channel/UCguDpQ9yTB939eb9hWQ1LCg?view_as=subscriber">
+                                                <img class="TxAlpha" src="Images/Icons/YouTubeIcon.png" title="YouTube" />
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="NetworkingRowTab">
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" target="_blank" href="https://www.linkedin.com/in/sami-nofal-b51a4515b">
+                                                <img class="TxAlpha" src="Images/Icons/LinkedInIcon.png" title="LinkedIn" />
+                                            </a>
+                                        </div>
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" href="https://twitter.com/SamiKNofal">
+                                                <img class="TxAlpha" src="Images/Icons/TwitterIcon.png" title="Twitter" />
+                                            </a>
+                                        </div>
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" href="About.html">
+                                                <img class="TxAlpha" src="Images/Icons/PhoneIcon.png" title="Call" />
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div id="FooterCopyRight">Designed & developed by Sami Nofal.</div>
+
+                    </div>
+
+                </div>
+
+            </footer>
+
+
+        </div>
+
+    </form>
+
+</body>
+
+
+</html>

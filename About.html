@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head runat="server">
+
+    <title>
+        About
+    </title>
+
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="Images/Favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="Images/Favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="Images/Favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="Images/Favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="Images/Favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="Images/Favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="Images/Favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="Images/Favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/Favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="Images/Favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="Images/Favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Images/Favicon/manifest.json">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="JavaScripts/MainScript.js"></script>
+    <script type="text/javascript" src="JavaScripts/SlickSlider.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="Styles/AboutLayout.css?v=1" />
+    <link rel="stylesheet" type="text/css" href="Styles/GlobalLayout.css?v=1" />
+    <link rel="stylesheet" type="text/css" href="Styles/SlickSlider.css?v=1" />
+    <link rel="stylesheet" type="text/css" href="Styles/SlickSliderTheme.css?v=1" />
+
+</head>
+
+
+<body id="Body">
+
+    <form id="WebForm" runat="server">
+
+        <div id="ScrollTop">
+            <img class="TxBeta" src="Images/Icons/ChevronUp.png" title="Scroll back up" />
+        </div>
+
+        <div id="SideMenu" class="TxOmega">
+
+            <div id="SideMenuCont">
+
+                <ul class="SideMenuTopNav">
+
+                    <li class="SideMenuTopList">
+                        <a class="DefLink " href="https://www.linkedin.com/in/sami-nofal-b51a4515b">
+                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+
+                    <li class="SideMenuTopList">
+                        <a class="SideMenuTopLink" href="https://github.com/SamiKNofal">
+                            <span>GitHub</span>
+                        </a>
+                    </li>
+
+                    <li class="SideMenuTopList">
+                        <div class="CurrentTime"><span></span></div>
+                    </li>
+
+                </ul>
+
+                <ul class="SideMenuNav">
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="index.html"><span>Home</span></a>
+                    </li>
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="Projects.html"><span>Projects</span></a>
+                    </li>
+
+                </ul>
+
+                <ul class="SideMenuNav">
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="Gallery.html"><span>Gallery</span></a>
+                    </li>
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="Documents.html"><span>Documents</span></a>
+                    </li>
+
+                </ul>
+
+                <ul class="SideMenuNav">
+
+                    <li class="SideMenuList">
+                        <a class="DefLink TxAlpha" href="About.html"><span>About</span></a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div id="TopHeader">
+
+            <div id="TopHeaderContainer">
+
+                <div id="TopHeaderNav">
+
+                    <ul id="TopHeaderTab">
+
+                        <li class="TopHeaderLists">
+                            <div class="TopHeaderListCont TxAlpha">
+                                <a class="TopHeaderLink" href="https://www.linkedin.com/in/sami-nofal-b51a4515b">
+                                    <span>LinkedIn</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="TopHeaderLists">
+                            <div class="TopHeaderListCont TxAlpha">
+                                <a class="TopHeaderLink" href="https://github.com/SamiKNofal">
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="TopHeaderLists">
+                            <div class="TopHeaderListCont TxAlpha">
+                                <div class="CurrentTime">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="WebContainer">
+
+            <header id="Header" class="TxAlpha">
+
+                <div id="HeaderContainer">
+
+                    <div id="HeaderMenuIcon" class="TxAlpha">
+                        <div id="HeaderIcon">
+                            <div class="HeaderIconBar TxAlpha"></div>
+                            <div class="HeaderIconBar TxAlpha"></div>
+                        </div>
+                    </div>
+
+
+                    <div id="HeaderLogo">
+
+                        <a id="HeaderLogoLink" href="index.html">
+                            <img src="Images/Icons/Logo4.png" title="Logo" />
+                        </a>
+
+                    </div>
+
+
+                    <div id="HeaderNav">
+
+                        <ul id="HeaderTab">
+
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="index.html">
+                                        <span>Home</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="Projects.html">
+                                        <span>Projects</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="Gallery.html">
+                                        <span>Gallery</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="Documents.html">
+                                        <span>Documents</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+                            <li class="HeaderLists">
+                                <div class="HeaderListLink TxAlpha">
+                                    <a class="HeaderLink" href="About.html">
+                                        <span>About</span>
+                                    </a>
+                                </div>
+                                <div class="HeaderNavBar TxEpsilon"></div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+            
+            <div id="WebContent">
+
+                <div class="WebBanner AboutBanner">
+                    <div class="WebBannerBox"><p class="WebBannerTitle">ABOUT</p></div>
+                </div>
+
+                <div class="GoldStrip"></div>
+
+                <div class="SectionImg">
+
+                    <div class="SectionImgHolder"><img src="Images/Icons/Logo2.png" title="Logo"></div>
+
+                </div>
+                
+                <div class="SectionTxt">
+
+                    <div class="SectionTxtCont">
+
+                        <div class="SectionTitle">Get to know me more.</div>
+                        <div class="SectionParag">
+                            Interested in solving real-world problems, I have put my dedication to become an engineer and be 
+                            capable to use my knowledge and skills gained to apply them where necessary. The fields that caught my 
+                            attention are hardware developement, data analysis and programming. Our world nowadays relys on technologies 
+                            more than ever allowing us to communicate and be more productive by integreating it in medical, military, industrial,
+                            economical sectors and more. By imporving upon it, society can advance in more ways than ever. 
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="SectionSubTxt">
+
+                    <div class="SectionSubTxtCont">
+
+                        <div class="SectionSubTitle">The goal is to learn and apply.</div>
+                        
+                        <div class="SectionSubParag">
+                            The motivation to learn and understand is one of the main aspects for a successful future.
+                            By becoming a significant source of technological innovation and expertise, we can focus our brainpower on solving 
+                            problems through the application of science and mathematics, discovering new ways to make life better for the general public.
+                        </div>
+
+                        <div class="SectionSubParag">
+                            The design goals focus on problems through the application of creative thinking using scientific and mathematical principles. 
+                            We start by clearly defining the problem and formulating different ideas and approaches to a solution. Therefore, 
+                            creating designs based on these ideas, selecting the approaches that are most likely to succeed and easy to implement. 
+                            Designs lead to the construction of prototypes, which are then tested to ensure effectiveness.
+                        </div>
+
+                        <div class="SectionSubParag">
+                            Being productive means making progress with respect to our goal these revolve around creating successful processes and designs,
+                            as well as maintenance and operations duties in a variety of engineering disciplines.
+                        </div>
+
+                        <div class="SectionSubTitle">More technical information about me can be found below.</div>
+                        
+                    </div>
+
+                </div>
+
+                <div id="AboutCont">
+
+                    <div id="AboutContInner">
+
+                        <div id="AboutIntro">
+
+                            <div id="AboutIntroSub">
+
+                                <div id="ProfIdentity">
+                                    <div id="ProfilePicCont">
+                                        <img id="ProfPic" src="Images/Icons/User2.png" title="Profile Photo"/>
+                                    </div>
+                                    <div id="ProfileName"><span>Sami Nofal</span></div>
+                                    <div id="ProfileTitle"><span>M.Sc. Student at University of Greenwich | Electrical and Electronics Engineering</span></div>
+                                </div>
+
+                                <div class="ProfInfo">
+                                    <div class="ProfInfoTitle"><span>Personal Email</span></div>
+                                    <div class="ProfInfoTxt"><span>SamiNofal.Live@Gmail.com</span></div>
+                                </div>
+
+                                <div class="ProfInfo">
+                                    <div class="ProfInfoTitle"><span>Mobile Number</span></div>
+                                    <div class="ProfInfoTxt"><span>U.K: +447526164063</span></div>
+                                </div>
+
+                                <div class="ProfInfo">
+                                    <div class="ProfInfoTitle"><span>Skype</span></div>
+                                    <div class="ProfInfoTxt"><span>SamiNofal.Live</span></div>
+                                </div>
+
+                                <div class="ProfInfo">
+                                    <div class="ProfInfoTitle"><span>LinkedIn</span></div>
+                                    <div class="ProfInfoTxt"><span>Sami Nofal</span></div>
+                                </div>
+
+                                <div class="ProfInfo">
+                                    <div class="ProfInfoTitle"><span>GitHub</span></div>
+                                    <div class="ProfInfoTxt"><span>SamiKNofal</span></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div id="AboutInfo">
+
+                            <div id="AboutInfoSub">
+
+                                <div class="AboutInfoCont">
+                                    <div class="AboutInfoTitle"><span>Work Experience</span></div>
+                                    <div class="AboutInfoData">
+                                        <table class="AID_Table">
+                                            <tr class="AID_TR">
+                                                <td class="AID_TD">
+                                                    <div class="AID_Img"><img src="Images/About/ProfileIcon.png" title="Logo"/></div>
+                                                </td>
+                                                <td class="AID_TD">
+                                                    <div class="AID_Txt_H1">
+                                                        <span>Freelance Web Developer</span>
+                                                    </div>
+                                                    <div class="AID_Txt_H2">
+                                                        <span>Self-Employed</span>
+                                                    </div>
+                                                    <div class="AID_Txt_H3">
+                                                        <span>Oct 2019 – Aug 2020</span>
+                                                    </div>
+                                                    <div class="AID_Txt_H4">
+                                                        <span>London, England, United Kingdom</span>
+                                                    </div>
+                                                    <div class="AID_Txt_Parag">
+                                                        <span>
+                                                            Providing an experienced full stack freelance web developer with a track record of producing 
+                                                            excellent results for 4+ years. Increasing user experience satisfaction from a website redesign 
+                                                            for a co-working space. Excellent communication and collaboration skills.
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="AboutInfoData">
+                                        <table class="AID_Table">
+                                            <tr class="AID_TR">
+                                                <td class="AID_TD">
+                                                    <div class="AID_Img"><img src="Images/About/HoshanGroup.jpg" title="Logo"/></div>
+                                                </td>
+                                                <td class="AID_TD">
+                                                    <div class="AID_Txt_H1">
+                                                        <span>Presales Network Engineer</span>
+                                                    </div>
+                                                    <div class="AID_Txt_H2">
+                                                        <span>Hoshan Company Limited</span>
+                                                    </div>
+                                                    <div class="AID_Txt_H3">
+                                                        <span>Feb 2019 – Oct 2019</span>
+                                                    </div>
+                                                    <div class="AID_Txt_H4">
+                                                        <span>Riyadh, Saudi Arabia</span>
+                                                    </div>
+                                                    <div class="AID_Txt_Parag">
+                                                        <span>
+                                                            Secures input from all necessary solution stakeholders within the customer firm. Adapts solutions,
+                                                            as necessary, to ensure appropriate support. Responsible for designing connectivity solutions for 
+                                                            existing and potential customers. Providing network technical requirements for Saudi Arabia Ministry 
+                                                            of Internal. Develop work breakdown structures (WBS) and system bill of materials (BOM) for proposed 
+                                                            solutions. Provide accurate and timely management information, to include activity reports and bid 
+                                                            reviews.
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="AboutInfoData">
+                                        <table class="AID_Table">
+                                            <tr class="AID_TR">
+                                                <td class="AID_TD">
+                                                    <div class="AID_Img"><img src="Images/About/OrientedSoftware.jpg" title="Logo"/></div>
+                                                </td>
+                                                <td class="AID_TD">
+                                                    <div class="AID_Txt_H1">
+                                                        <span>Full Stack Developer</span>
+                                                    </div>
+                                                    <div class="AID_Txt_H2">
+                                                        <span>Oriented Software</span>
+                                                    </div>
+                                                    <div class="AID_Txt_H3">
+                                                        <span>Oct 2014 – Sep 2018</span>
+                                                    </div>
+                                                    <div class="AID_Txt_H4">
+                                                        <span>Amman, Jordan</span>
+                                                    </div>
+                                                    <div class="AID_Txt_Parag">
+                                                        <span>
+                                                            Part-time full stack developer. Developing and designing websites to make them user 
+                                                            friendly and more responsive to different devices. Taking care in creating an efficient 
+                                                            code to minimize the loading time by utilizing engineering skills to apply algorithms to 
+                                                            ensure the code meets the requirements with zero errors. <br/><br/> Skills earned over the working period:
+                                                            Maintain and improve website. Design mobile-based features. A passion for problem solving.
+                                                            Create quality mock ups and prototypes. Optimize applications for maximum speed. Stay 
+                                                            up-to-date on emerging technologies. Help back-end developers with coding and troubleshooting.
+                                                            Ensure high quality graphic standards and brand consistency. The ability to learn concepts 
+                                                            and apply them to other problems. Get feedback from, and build solutions for, users and 
+                                                            customers. Collaborate with back-end developers and web designers to improve usability. <br/><br/>
+                                                            Knowledge in the following programming languages and computer software: C#, SQL, C/C++, 
+                                                            HTML, CSS, JavaScript, jQuery, JSON, AJAX, XML, XSLT, XPath, XQuery, Python, Java, and 
+                                                            Assembly for embedded systems. Technologies and frameworks experience in ASP.NET
+                                                            framework and SharePoint designer. Software experience in Microsoft Visual Studio, 
+                                                            MatLab & Simulink, Microsoft Office, Microsoft SQL, Android Studio and AutoCAD.
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="AboutInfoCont">
+                                    <div class="AboutInfoTitle"><span>Education</span></div>
+                                    <div class="AboutInfoData">
+                                        <table class="AID_Table">
+                                            <tr class="AID_TR">
+                                                <td class="AID_TD">
+                                                    <div class="AID_Img"><img src="Images/About/UniversityofGreenwich.jpg" title="Logo"/></div>
+                                                </td>
+                                                <td class="AID_TD">
+                                                    <div class="AID_Txt_H1">
+                                                        <span>University of Greenwich</span>
+                                                    </div>
+                                                    <div class="AID_Txt_H2">
+                                                        <span>Master of Science - MS, Electrical and Electronics Engineering</span>
+                                                    </div>
+                                                    <div class="AID_Txt_H3">
+                                                        <span>2020 – Present</span>
+                                                    </div>
+                                                    <div class="AID_Txt_H4">
+                                                        <span>London, England, United Kingdom</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="AboutInfoData">
+                                        <table class="AID_Table">
+                                            <tr class="AID_TR">
+                                                <td class="AID_TD">
+                                                    <div class="AID_Img"><img src="Images/About/UniversityofJordan.jpg" title="Logo"/></div>
+                                                </td>
+                                                <td class="AID_TD">
+                                                    <div class="AID_Txt_H1">
+                                                        <span>University of Jordan</span>
+                                                    </div>
+                                                    <div class="AID_Txt_H2">
+                                                        <span>Bachelor of Science - BS, Electrical, Electronics and Communications Engineering</span>
+                                                    </div>
+                                                    <div class="AID_Txt_H3">
+                                                        <span>2013 – 2018</span>
+                                                    </div>
+                                                    <div class="AID_Txt_H4">
+                                                        <span>Amman, Jordan</span>
+                                                    </div>
+                                                    <div class="AID_Txt_Parag">
+                                                        <span>Second-Class Honours</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <footer id="Footer">
+
+                <div id="FooterBar">
+                    <div class="FooterSubBar TxBeta"></div>
+                </div>
+
+                <div id="FooterContHolder">
+
+                    <div id="FooterCont">
+
+                        <div id="FooterInnerCont">
+
+                            <div class="FooterColumnTab">
+
+                                <ul class="FooterTabList">
+
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="index.html"><span>Home</span></a>
+                                    </li>
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="Projects.html"><span>Projects</span></a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="FooterColumnTab">
+
+                                <ul class="FooterTabList">
+
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="Gallery.html"><span>Gallery</span></a>
+                                    </li>
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="Documents.html"><span>Documents</span></a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="FooterColumnTab">
+
+                                <ul class="FooterTabList">
+
+                                    <li class="FooterList">
+                                        <a class="DefLink TxAlpha" href="About.html"><span>About</span></a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                            <div class="FooterColumnTab">
+
+                                <div id="NetworkingCont">
+
+                                    <div class="NetworkingRowTab">
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" target="_blank" href="https://github.com/SamiKNofal">
+                                                <img class="TxAlpha" src="Images/Icons/GitHubIcon.png" title="GitHub" />
+                                            </a>
+                                        </div>
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" target="_blank" href="About.html">
+                                                <img class="TxAlpha" src="Images/Icons/SkypeIcon.png" title="Skype" />
+                                            </a>
+                                        </div>
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" target="_blank" href="https://www.youtube.com/channel/UCguDpQ9yTB939eb9hWQ1LCg?view_as=subscriber">
+                                                <img class="TxAlpha" src="Images/Icons/YouTubeIcon.png" title="YouTube" />
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="NetworkingRowTab">
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" target="_blank" href="https://www.linkedin.com/in/sami-nofal-b51a4515b">
+                                                <img class="TxAlpha" src="Images/Icons/LinkedInIcon.png" title="LinkedIn" />
+                                            </a>
+                                        </div>
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" href="https://twitter.com/SamiKNofal">
+                                                <img class="TxAlpha" src="Images/Icons/TwitterIcon.png" title="Twitter" />
+                                            </a>
+                                        </div>
+
+                                        <div class="NetworkingIcon">
+                                            <a class="DefLink" href="About.html">
+                                                <img class="TxAlpha" src="Images/Icons/PhoneIcon.png" title="Call" />
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div id="FooterCopyRight">Designed & developed by Sami Nofal.</div>
+
+                    </div>
+
+                </div>
+
+            </footer>
+
+
+        </div>
+
+    </form>
+
+</body>
+
+
+</html>
