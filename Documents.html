@@ -315,32 +315,31 @@
                     </div>
 
                 </div>
-                
-                <!-- Remove link access to documents for website beta version -->
-                <script type="text/javascript">
-                    $(document).ready(function () {
-
-                        try {
-                            var DocumentLinks = $('.DocumentLinks');
-                            var DocLink = DocumentLinks.find('a');
-                            DocLink.removeAttr('href').removeAttr('target').removeAttr('download');
-                            DocLink.click(function () {
-                                alert('Access to document links is not available during the beta version.' +
-                                    ' Please contact the web owner for any further information.');
-                            });
-                        }
-
-                        catch (e) {
-                            console.log(e);
-                        }
-
-                    });
-
-                </script>
 
             </div>
 
+            <!-- Remove link access to documents for restricted view -->
+            <script type="text/javascript">
+               $(document).ready(function () {
 
+                    try {
+                        var DocumentLinks = $('.DocumentLinks');
+                        var DocLink = DocumentLinks.find('a');
+                        DocLink.removeAttr('href').removeAttr('target').removeAttr('download');
+                        DocLink.click(function () {
+                            alert('Access to document links is not available during restricted view.' +
+                                ' Please contact the web owner for any further details.');
+                        });
+                    }
+
+                    catch (e) {
+                        console.log(e);
+                    }
+
+                });
+
+            </script>
+            
             <footer id="Footer">
 
                 <div id="FooterBar">
