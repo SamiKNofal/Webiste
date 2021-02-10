@@ -512,7 +512,95 @@
 
             </div>
 
+            <div id="Permission">
 
+                <div id="PermissionCont">
+
+                    <div><img src="Images/Icons/Logo2.png"/></div>
+                    <div><p>This section is not available in restricted view. PLease contact the web owner for further information</p></div>
+
+                    <div class="BackBtn"><span onclick="goBack()">Go back</span></div>
+
+                </div>
+
+            </div>
+
+            <style type="text/css">
+
+                #Permission {
+                    width: 100%;
+                    position: relative;
+                }
+
+                #PermissionCont {
+                    width: 90%;
+                    padding: 20% 0%;
+                    position: relative;
+                    margin: 0 auto;
+                }
+
+                    #PermissionCont div:first-of-type {
+                        text-align: center;
+                        padding: 25px;
+                    }
+
+                        #PermissionCont div:first-of-type img {
+                            width: 70px;
+                            height: 70px;
+                        }
+
+                    #PermissionCont div:nth-last-of-type(2) {
+                        text-align: center;
+                        padding: 25px;
+                        font-family: Roboto;
+                        font-size: 20px;
+                        color: #000;
+                    }
+
+                        #PermissionCont div:nth-last-of-type(2) p {
+                            width: 100%;
+                            text-align: center;
+                            font-family: Roboto;
+                            font-size: 18px;
+                            color: #000;
+                        }
+
+                    .BackBtn {
+                        width: 100%;
+                        text-align: center;
+                        padding: 25px 0px;
+                    }
+
+                        .BackBtn span {
+                            font-family: roboto;
+                            font-size: 18px;
+                            background: #000;
+                            color: #fff;
+                            cursor: pointer;
+                            padding: 10px;
+                            display: inline-block;
+                        }
+
+            </style>
+
+            <script type="text/javascript">
+
+                $(document).ready(function () {
+
+                    var SectionImg = $('.SectionImg'), SectionTxt = $('.SectionTxt'),
+                        SectionSubTxt = $('.SectionSubTxt'), AboutCont = $('#AboutCont');
+
+                    SectionImg.remove();
+                    SectionTxt.remove();
+                    SectionSubTxt.remove();
+                    AboutCont.remove();
+
+                });
+
+                function goBack() { window.history.back(); }
+
+            </script>
+            
             <footer id="Footer">
 
                 <div id="FooterBar">
