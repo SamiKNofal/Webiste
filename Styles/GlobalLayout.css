@@ -39,10 +39,6 @@ body, #Body {
     color: red;
 }
 
-.BlackBg {
-    background: #000;
-}
-
 .TxAlpha {
     -webkit-transition: all 0.15s ease-in-out;
     -moz-transition: all 0.15s ease-in-out;
@@ -346,7 +342,7 @@ header, #Header {
 
 .HeaderActive {
     padding: 0px 0px !important;
-    background: #0d0d0d !important;
+    background: #000 !important;
     position: fixed !important;
 }
 
@@ -952,7 +948,7 @@ header, #Header {
 .CoverMaterialCont {
     position: relative;
     width: 100%;
-    margin: 0;
+    margin: 40px 0px;
 }
 
 .CoverMaterial {
@@ -985,16 +981,16 @@ header, #Header {
     }
 
     .CoverMaterialTxt p:last-of-type {
-        font-family: roboto;
+        font-family: sans-serif;
         padding: 20px 20px;
         font-size: 25px;
         margin: 0px;
-        background: #0d0d0d;
-        box-shadow: 10px 10px 0px 0px #0925A8;
+        background: #000;
+        box-shadow: 10px 10px 0px 0px #060E19;
     }
 
 .HomeCoverMaterial {
-    background-image: url('../Images/Preview/CoverMaterialHome.jpg');
+    background-image: url('../Images/Preview/ELEE1163_Proj.jpg');
 }
 
 footer, #Footer {
@@ -1215,6 +1211,11 @@ footer, #Footer {
         margin: 2% 2%;
     }
     
+    /* Home Layout */
+    .BoxCont {
+        width: 45%;
+        height: 24vw;
+    }
     /* Documents Layout */
     .DocumentsBlock {
         width: 46.5%;
