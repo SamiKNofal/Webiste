@@ -1076,11 +1076,7 @@ footer, #Footer {
     }
 
     .FooterList a span {
-        color: #ccc;
-    }
-
-    .FooterList a:hover span {
-        color: #fff;
+        color: #000;
     }
 
 #NetworkingCont {
