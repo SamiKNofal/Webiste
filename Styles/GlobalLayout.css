@@ -840,13 +840,13 @@ header, #Header {
 #ItemsAreaCont {
     width: 100%;
     position: relative;
-    padding: 0px 0px 25px 0px;
 }
 
 #ItemsArea {
     width: 90%;
     margin: 0 auto;
     position: relative;
+    padding: 40px 0px;
 }
 
     #ItemsArea::before {
