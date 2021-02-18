@@ -153,7 +153,7 @@ body, #Body {
     .SideMenuTopList a:link, .SideMenuTopList a:active,
     .SideMenuTopList a:visited {
         color: #000;
-        padding: 20px 25px;
+        padding: 25px 30px;
         text-decoration: none;
     }
 
@@ -170,12 +170,7 @@ body, #Body {
     width: 100%;
     padding: 0;
     margin: 0;
-    border-bottom: 1px solid #e3e3e3;
 }
-
-    .SideMenuNav:last-of-type {
-        border-bottom: 0;
-    }
 
 .SideMenuList {
     list-style-type: none;
@@ -185,7 +180,7 @@ body, #Body {
     .SideMenuList a:visited {
         font-family: roboto;
         color: #000;
-        padding: 20px 25px;
+        padding: 40px 30px;
         text-decoration: none;
     }
 
@@ -230,8 +225,8 @@ body, #Body {
 
 #TopHeader {
     width: 100%;
-    background: #0d0d0d;
-    height: 48px;
+    background: #000;
+    height: 40px;
 }
 
 #TopHeaderContainer {
@@ -274,7 +269,7 @@ body, #Body {
     height: inherit;
     position: relative;
     display: inline-block;
-    line-height: 48px;
+    line-height: 40px;
 }
 
 .TopHeaderListCont a:hover span::after {
@@ -290,7 +285,7 @@ body, #Body {
     .TopHeaderListCont a:link, .TopHeaderListCont a:active,
     .TopHeaderListCont a:visited, .TopHeaderListCont a:hover {
         text-decoration: none;
-        color: #737373;
+        color: #fff;
         font-size: 12px;
         display: inline-block;
         padding: 0px 20px;
@@ -300,7 +295,7 @@ body, #Body {
     .TopHeaderListCont span {
         font-family: roboto;
         font-size: 12px;
-        color: #737373;
+        color: #fff;
         font-weight: bold;
         padding: 5px 0px;
         height: inherit;
@@ -336,7 +331,6 @@ header, #Header {
     top: 0;
     z-index: 100;
     height: 50px;
-    padding: 5px 0px;
 }
 
 .HeaderActive {
@@ -475,6 +469,7 @@ header, #Header {
         text-align: center;
         cursor: pointer;
         position: relative;
+        font-weight: bold;
     }
 
 .HeaderNavBar {
@@ -933,12 +928,13 @@ header, #Header {
     color: #000;
     text-align: left;
     padding: 10px;
+    font-weight: bold;
 }
 
 .ItemsAreaParag {
     font-size: 15px;
     font-family: roboto;
-    color: #5e5e5e;
+    color: #000;
     text-align: left;
     padding: 10px;
     line-height: 25px;
@@ -1037,7 +1033,7 @@ footer, #Footer {
 
 #FooterInnerCont {
     width: 100%;
-    padding: 30px 0px 15px 0px;
+    padding: 30px 0px;
 }
 
     #FooterInnerCont::before {
@@ -1055,8 +1051,13 @@ footer, #Footer {
 
 .FooterColumnTab {
     float: left;
-    width: 25%;
+    width: 33.33%;
 }
+
+    .FooterColumnTab:nth-of-type(4) {
+        width: 100%;
+        padding: 40px 0px;
+    }
 
 .FooterTabList {
     padding: 0px 0px;
@@ -1069,23 +1070,21 @@ footer, #Footer {
 
     .FooterList a:link, .FooterList a:visited,
     .FooterList a:hover, .FooterList a:active {
-        padding: 20px 20px;
+        padding: 40px 30px;
         color: #000;
         font-family: roboto;
         font-size: 15px;
-    }
-
-    .FooterList a span {
-        color: #000;
+        font-weight: bold;
     }
 
 #NetworkingCont {
     width: 100%;
-    text-align: center;
+    text-align: right;
 }
 
 .NetworkingRowTab {
-    width: 100%;
+    display: inline-block;
+    width: auto;
 }
 
 .NetworkingIcon {
@@ -1218,21 +1217,12 @@ footer, #Footer {
 
 /* On screens that are 850px or less */
 @media screen and (max-width: 850px) {
-    #NetworkingCont {
-        padding: 15px 0px;
-    }
-
     .FooterColumnTab {
-        width: 33.33%;
+        width: 100%;
     }
 
-        .FooterColumnTab:nth-of-type(4) {
-            width: 100%;
-        }
-
-    .NetworkingRowTab {
-        display: inline-block;
-        width: auto;
+    #NetworkingCont {
+        text-align: left;
     }
 }
 
@@ -1459,13 +1449,6 @@ footer, #Footer {
     /* Projects layout */
     .ItemsAreaHolder {
         width: 96%;
-    }
-}
-
-/* On screens that are 550px or less */
-@media screen and (max-width: 550px) {
-    .FooterColumnTab {
-        width: 50%;
     }
 }
 
