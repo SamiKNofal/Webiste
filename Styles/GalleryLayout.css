@@ -109,11 +109,11 @@
     overflow: hidden;
 }
 
-.BoxLink, .BoxLink:active,
-.BoxLink:visited {
-    text-decoration: none;
-    cursor: pointer;
-}
+    .BoxLink, .BoxLink:active,
+    .BoxLink:visited {
+        text-decoration: none;
+        cursor: pointer;
+    }
 
 .ImageBoxPrev {
     width: 100%;
@@ -180,3 +180,4 @@
             opacity: 1;
             filter: alpha(opacity=100);
         }
+

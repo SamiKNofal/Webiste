@@ -271,11 +271,11 @@ body, #Body {
     line-height: 40px;
 }
 
-.TopHeaderListCont a:hover span::after {
-    top: 100%;
-    opacity: 1;
-    filter: alpha(opacity=100);
-}
+    .TopHeaderListCont a:hover span::after {
+        top: 100%;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
 
 .TopHeaderListCont {
     height: inherit;
@@ -517,6 +517,7 @@ header, #Header {
     background-size: cover;
     background-origin: padding-box;
     background-clip: border-box;
+    overflow: hidden;
 }
 
 .WebBannerBox {
@@ -534,7 +535,14 @@ header, #Header {
     text-align: center;
     margin: 0%;
     padding: 0%;
-    line-height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
 
 .ProjectsBanner {
@@ -737,14 +745,36 @@ header, #Header {
     line-height: 25px;
 }
 
-.SectionSubImgView {
+.SectionSubImgView, .SectionSubImgViewMini1,
+.SectionSubImgViewMini2, .SectionSubImgViewLarge {
     text-align: center;
     padding: 10px 25px;
 }
 
     .SectionSubImgView img {
-        width: 50%;
+        width: 40%;
     }
+
+    .SectionSubImgViewMini1 img {
+        width: 15%;
+    }
+
+    .SectionSubImgViewMini2 img {
+        width: 35%;
+    }
+
+    .SectionSubImgViewLarge img {
+        width: 60%;
+    }
+
+.SectionSubFig {
+    text-align: center;
+    font-family: robot;
+    font-size: 15px;
+    color: #000;
+    padding: 0px 25px 10px 25px;
+    line-height: 25px;
+}
 
 .SectionSubTableCont {
     margin: 0;
@@ -872,7 +902,6 @@ header, #Header {
 }
 
 .ItemsAreaMaterial {
-    /*border: solid 1px #ededed;*/
     box-shadow: 0px 0px 10px 0px rgb(170, 170, 170);
     height: inherit;
     max-height: inherit;
@@ -937,54 +966,6 @@ header, #Header {
     text-align: left;
     padding: 10px;
     line-height: 25px;
-}
-
-.CoverMaterialCont {
-    position: relative;
-    width: 100%;
-    margin: 40px 0px;
-}
-
-.CoverMaterial {
-    position: relative;
-    width: 100%;
-    position: relative;
-    background-color: #0b0b0b;
-    background-position-x: 50%;
-    background-position-y: 50%;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    background-origin: padding-box;
-    background-clip: border-box;
-}
-
-.CoverMaterialTxt {
-    text-align: left;
-    color: #fff;
-    padding: 10% 2.5%;
-    width: 50%;
-}
-
-    .CoverMaterialTxt p:first-of-type {
-        font-family: sans-serif;
-        padding: 20px 0px;
-        font-size: 60px;
-        margin: 0px;
-        font-weight: bold;
-    }
-
-    .CoverMaterialTxt p:last-of-type {
-        font-family: sans-serif;
-        padding: 20px 20px;
-        font-size: 25px;
-        margin: 0px;
-        background: #000;
-        box-shadow: 10px 10px 0px 0px #060E19;
-    }
-
-.HomeCoverMaterial {
-    background-image: url('../Images/Preview/Earth.jpg');
 }
 
 footer, #Footer {
@@ -1076,10 +1057,37 @@ footer, #Footer {
         font-weight: bold;
     }
 
-#NetworkingCont {
-    width: 100%;
-    text-align: right;
-}
+    .FooterList span {
+        position: relative;
+    }
+
+    .FooterList span::after {
+        content: '';
+        position: absolute;
+        top: 90%;
+        left: 0px;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        right: 0px;
+        height: 2px;
+        background-color: #000;
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        -ms-transition: all 0.1s ease-in-out;
+        -o-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .FooterList a:hover span::after {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        top: 125%;
+    }
+
+    #NetworkingCont {
+        width: 100%;
+        text-align: right;
+    }
 
 .NetworkingRowTab {
     display: inline-block;
@@ -1208,6 +1216,50 @@ footer, #Footer {
         width: 45%;
         height: 24vw;
     }
+
+    .HighlightsCont {
+        box-shadow: 0px 5px 25px -25px #000
+    }
+
+    .HighlightsSec .HighlightsGrid:nth-of-type(1) {
+        float: none;
+        width: 100%;
+        height: 400px;
+    }
+
+    .HighlightsSec .HighlightsGrid:nth-of-type(2) {
+        float: none;
+        width: 100%;
+        height: initial;
+        box-shadow: 0px -5px 25px -25px #000;
+    }
+
+    .HighlightsTxt {
+        position: initial;
+        top: 0%;
+        padding: 4vw 8vw;
+        transform: none;
+        -o-transform: none;
+        -ms-transform: none;
+        -moz-transform: none;
+        -webkit-transform: none;
+    }
+
+    .Pannels {
+        padding: 50px 0px;
+    }
+
+    .PannelHolder {
+        display: block;
+        border-left: 0px;
+        padding: 25px 0px;
+        border-bottom: 1px dotted #e4e4e4;
+    }
+
+        .PannelHolder:last-of-type {
+            border-bottom: 0px;
+        }
+
     /* Documents Layout */
     .DocumentsBlock {
         width: 46.5%;
@@ -1274,13 +1326,16 @@ footer, #Footer {
     }
 
     .WebBannerTitle {
-        line-height: 200px;
         font-size: 35px;
     }
 
     /* Home layout */
     #MainSlider, .MainSliderMaterials {
-        height: 60vw;
+        height: 85vw;
+    }
+
+    .MainSliderLink {
+        padding: 10vw 5vw;
     }
 
     .MainSliderParag {
@@ -1324,8 +1379,14 @@ footer, #Footer {
         width: 100%;
     }
 
-    .SectionSubImgView img {
+    .SectionSubImgView img,
+    .SectionSubImgViewLarge img,
+    .SectionSubImgViewMini2 img {
         width: 100%;
+    }
+
+    .SectionSubImgViewMini1 img {
+        width: 50%;
     }
 
     .SectionSubTxt {
@@ -1433,10 +1494,6 @@ footer, #Footer {
 /* On screens that are 650px or less */
 @media screen and (max-width: 650px) {
     /* Home layout */
-    .MainSliderParag {
-        font-size: 25px;
-    }
-
     .CoverMaterialTxt p:first-of-type {
         font-size: 25px;
     }
