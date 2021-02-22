@@ -10,7 +10,7 @@
 #MainSlider {
     width: 100%;
     width: 100%;
-    height: 40vw;
+    height: 50vw;
     background: #060606;
 }
 
@@ -35,20 +35,36 @@
     }
 
 .MainSliderMaterials {
-    height: 40vw;
+    height: 50vw;
     overflow: hidden;
 }
 
 .MainSliderLink {
-    height: inherit;
-    width: 100%;
-    display: inline-block;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    text-align: right;
+    padding: 5vw;
+    right: 0;
 }
 
-    .MainSliderLink, .MainSliderLink:active,
-    .MainSliderLink:visited {
-        text-decoration: none;
-        cursor: pointer;
+.MainSlider-Href, .MainSlider-Href:active,
+.MainSlider-Href:visited {
+    text-decoration: none;
+    cursor: pointer;
+    font-family: roboto;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 50px;
+    background: #fff;
+}
+
+    .MainSlider-Href:hover {
+        background: #0925A8;
+        color: #fff;
     }
 
 .MainSliderParag {
@@ -87,284 +103,216 @@
         width: 100%;
     }
 
-.BoxPrev {
+.HighlightsCont {
     width: 100%;
     position: relative;
-    margin: 0px 0px 20px 0px;
-    min-height: 100px;
 }
 
-.BoxContainer {
-    width: 95%;
-    margin: 0 auto;
-    position: relative;
-    text-align: center;
-}
-
-.BoxCont {
-    position: relative;
-    width: 29%;
-    height: 15.5vw;
-    display: inline-block;
-    margin: 2%;
-    perspective: 1500px;
-}
-
-    .BoxCont:hover .BoxCover {
-        opacity: 1;
-        filter: alpha(opacity=100);
-    }
-
-    .BoxCont:hover .BoxIcon {
-        top: 27%;
-        opacity: 1;
-        filter: alpha(opacity=100);
-    }
-
-.BoxLink {
-    height: inherit;
+.Highlights {
     width: 100%;
-    display: inline-block;
-    box-shadow: 0px 0px 10px 0px rgb(170, 170, 170);
-    -o-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    perspective: 1500px;
+    position: relative;
     overflow: hidden;
 }
 
-    .BoxLink, .BoxLink:active,
-    .BoxLink:visited {
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-.BoxImg {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: #0d0d0d;
-    background-position-x: 50%;
-    background-position-y: 25%;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    background-origin: padding-box;
-    background-clip: border-box;
-}
-
-.BoxCover {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    filter: alpha(opacity=0);
-    background: rgba(0,0,0,0);
-}
-
-    .BoxCover:hover {
-        background: rgba(0,0,0,1);
-    }
-
-.BoxData {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-}
-
-.BoxIcon {
-    width: 25%;
-    position: absolute;
-    top: 37%;
-    left: 37%;
-    opacity: 0;
-    filter: alpha(opacity=0);
-}
-
-.ComponentsPrev {
+.HighlightsSec {
     width: 100%;
     position: relative;
-    margin: 30px 0px;
 }
 
-    .ComponentsPrev::before {
+    .HighlightsSec::before {
         content: ' ';
         display: table;
         box-sizing: inherit;
     }
 
-    .ComponentsPrev::after {
+    .HighlightsSec::after {
         content: ' ';
         display: table;
         box-sizing: inherit;
         clear: both;
     }
 
-.CompCont {
+.HighlightsGrid {
     width: 50%;
+    height: 700px;
     position: relative;
-    float: right;
+    overflow: hidden;
 }
 
-    .CompCont p {
-        font-family: roboto;
-        font-size: 18px;
-        line-height: 25px;
-        padding: 80px 30px;
-        margin: 0px;
-        color: #000;
+    .HighlightsSec:nth-of-type(2n+1) .HighlightsGrid {
+        float: right;
     }
 
-    .CompCont:first-of-type {
-        position: absolute;
-        right: 50%;
-        top: 0%;
-        height: 100%;
-        background-size: auto;
+        .HighlightsSec:nth-of-type(2n+1) .HighlightsGrid:nth-of-type(2) {
+            background: #fff;
+        }
+
+    .HighlightsSec:nth-of-type(2n) .HighlightsGrid {
+        float: left;
+    }
+
+        .HighlightsSec:nth-of-type(2n) .HighlightsGrid:nth-of-type(2) {
+            background: #ecebeb;
+        }
+
+
+    .HighlightsSec .HighlightsGrid:nth-of-type(1) {
+        background-color: #0b0b0b;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
         background-size: cover;
+        background-origin: padding-box;
+        background-clip: border-box;
     }
 
-.ComCont_img_1 {
-    background: url('../Images/Preview/AbstractParticles.jpg') no-repeat 50% 50%;
+.HighlightsTxt {
+    position: absolute;
+    top: 50%;
+    padding: 0vw 8vw;
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
 }
 
-#PreviewContents {
-    width: 100%;
+.Hl-Title {
+    font-size: 45px;
+    font-weight: bold;
+    padding: 15px;
+    margin: 0;
+    font-family: "gotham-black", "gotham-book", Arial, Georgia, "Times New Roman";
+    color: #000;
 }
 
-.PreviewRow {
-    width: 100%;
-    text-align: left;
+.Hl-Parag {
+    font-size: 15px;
+    padding: 15px;
+    margin: 0;
+    font-family: roboto;
+    color: #000;
+    line-height: 2;
+}
+
+.Hl-Link:link, .Hl-Link:visited,
+.Hl-Link:active {
+    display: inline-block;
+    padding: 15px;
+    color: #000;
+    font-family: roboto;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.Hl-Link:hover {
+    color: #0925A8;
+}
+
+.Hl-Link-Arrow {
+    display: inline-block;
     position: relative;
+    background-color: #000;
+    width: 16px;
+    height: 2px;
+    vertical-align: middle;
+    margin-left: 10px;
 }
 
-    .PreviewRow::before {
-        content: ' ';
-        display: table;
-        box-sizing: inherit;
+    .Hl-Link-Arrow::before {
+        display: block;
+        position: absolute;
+        content: '';
+        background-color: #000;
+        height: 2px;
+        width: 7px;
+        right: -1px;
+        top: -2px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        transition: all 300ms ease-in-out;
     }
 
-    .PreviewRow::after {
-        content: ' ';
-        display: table;
-        box-sizing: inherit;
-        clear: both;
+    .Hl-Link-Arrow::after {
+        display: block;
+        position: absolute;
+        content: '';
+        background-color: #000;
+        height: 2px;
+        width: 7px;
+        right: -1px;
+        top: 2px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        transition: all 300ms ease-in-out;
     }
 
-    .PreviewRow:nth-of-type(2n) {
-        background: #fff;
-        direction: rtl;
+    .Hl-Link:hover .Hl-Link-Arrow {
+        margin-left: 20px;
     }
 
-        .PreviewRow:nth-of-type(2n) .PreviewColumn {
-            float: right;
-        }
-
-            .PreviewRow:nth-of-type(2n) .PreviewColumn:nth-of-type(1) {
-                background: #0d0d0d;
-            }
-
-            .PreviewRow:nth-of-type(2n) .PreviewColumn:nth-of-type(2) {
-                position: absolute;
-                right: 50%;
-                height: 100%;
-                top: 0%;
-            }
-
-    .PreviewRow:nth-of-type(2n+1) {
-        background: #f7f7f7;
-        direction: ltr;
+    .Hl-Link:hover .Hl-Link-Arrow,
+    .Hl-Link:hover .Hl-Link-Arrow::before,
+    .Hl-Link:hover .Hl-Link-Arrow::after {
+        background-color: #0925A8;
     }
 
-        .PreviewRow:nth-of-type(2n+1) .PreviewColumn {
-            float: left;
-        }
-
-            .PreviewRow:nth-of-type(2n+1) .PreviewColumn:nth-of-type(1) {
-                background: #0d0d0d;
-            }
-
-            .PreviewRow:nth-of-type(2n+1) .PreviewColumn:nth-of-type(2) {
-                position: absolute;
-                left: 50%;
-                height: 100%;
-                top: 0%;
-            }
-
-.PreviewColumn {
-    width: 50%;
-    position: relative;
-    overflow: hidden;
-}
-
-.PreviewParag {
+.PannelsCont {
     width: 100%;
-    direction: ltr;
     position: relative;
-    padding: 40px 0px;
+    display: none;
 }
 
-    .PreviewParag p:nth-of-type(1) {
-        font-size: 30px;
-        margin: 0;
-        padding: 5% 10%;
-        font-family: roboto;
-        color: #fff;
-    }
-
-    .PreviewParag p:nth-of-type(2) {
-        font-size: 18px;
-        margin: 0;
-        padding: 0% 10% 5% 10%;
-        font-family: roboto;
-        color: #fff;
-        line-height: 25px;
-    }
-
-    .PreviewParag a:link, .PreviewParag a:visited,
-    .PreviewParag a:active {
-        display: inline-block;
-        text-decoration: none;
-        font-family: roboto;
-        color: #000;
-        text-align: right;
-        font-size: 20px;
-        margin: 0% 0% 5% 10%;
-        padding: 10px 20px;
-        cursor: pointer;
-        border: 2px solid #fff;
-        background: #fff;
-        box-shadow: 0px 0px 0px 0px #7b7b7b;
-    }
-
-    .PreviewParag a:hover {
-        box-shadow: 0px 0px 15px -5px #7b7b7b;
-    }
-
-.PreviewImage {
-    width: 70%;
-    margin: 0 auto;
-    top: 15%;
+.Pannels {
+    width: 90%;
     text-align: center;
     position: relative;
+    margin: 0 auto;
+    padding: 100px 0px;
 }
 
-    .PreviewImage::before {
-        content: ' ';
-        display: table;
-        box-sizing: inherit;
+.PannelHolder {
+    display: table-cell;
+    border-left: 1px dotted #e4e4e4;
+}
+
+.PannelHolder:first-of-type {
+    border-left: 0px;
+}
+
+.PH-Img {
+    width: 85px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+    .PH-Img img {
+        width: 100%;
     }
 
-    .PreviewImage::after {
-        content: ' ';
-        display: table;
-        box-sizing: inherit;
-        clear: both;
+.PH-Title, .PH-Parag {
+    width: 90%;
+    margin: 0 auto;
+    color: #000;
+}
+
+    .PH-Title p {
+        font-family: "gotham-black", "gotham-book", Arial, Georgia, "Times New Roman";
+        font-size: 25px;
+        font-weight: bold;
+        margin: 0;
+        padding: 20px;
     }
 
-    .PreviewImage img {
-        width: 80%;
-        position: relative;
+    .PH-Parag p {
+        font-family: roboto;
+        font-size: 15px;
+        margin: 0;
+        padding: 20px;
+        text-align: left;
     }
