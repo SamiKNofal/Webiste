@@ -40,7 +40,6 @@
 }
 
 .MainSliderLink {
-    color: #fff;
     position: absolute;
     bottom: 0;
     text-align: right;
@@ -48,28 +47,42 @@
     right: 0;
 }
 
-.MainSlider-Href, .MainSlider-Href:active,
-.MainSlider-Href:visited {
+.MainSliderHref, .MainSliderHref:active,
+.MainSliderHref:visited {
     text-decoration: none;
     cursor: pointer;
     font-family: roboto;
     font-size: 15px;
     font-weight: bold;
-    color: #000;
     display: inline-block;
     padding: 10px 25px;
     border-radius: 50px;
-    background: #fff;
 }
 
-    .MainSlider-Href:hover {
+.SliderLightLink, .SliderLightLink:active,
+.SliderLightLink:visited {
+    background: #fff;
+    color: #000;
+}
+
+    .SliderLightLink:hover {
+        background: #0925A8;
+        color: #fff;
+    }
+
+.SliderDarkLink, .SliderDarkLink:active,
+.SliderDarkLink:visited {
+    background: #000;
+    color: #fff;
+}
+
+    .SliderDarkLink:hover {
         background: #0925A8;
         color: #fff;
     }
 
 .MainSliderParag {
     position: relative;
-    color: #fff;
     font-size: 60px;
     font-family: "gotham-black", "gotham-book", Arial, Georgia, "Times New Roman";
     top: 6.5vw;
@@ -82,8 +95,15 @@
     .MainSliderParag span {
         margin: 0px;
         padding: 0px;
-        color: #fff;
     }
+
+.SliderDarkParg {
+    color: #000;
+}
+
+.SliderLightParg {
+    color: #fff;
+}
 
 .MainSliderImg {
     width: 100%;
@@ -106,6 +126,7 @@
 .HighlightsCont {
     width: 100%;
     position: relative;
+    box-shadow: 0px 10px 30px -15px #000;
 }
 
 .Highlights {
@@ -152,7 +173,7 @@
     }
 
         .HighlightsSec:nth-of-type(2n) .HighlightsGrid:nth-of-type(2) {
-            background: #ecebeb;
+            background: #f9f9f9;
         }
 
 
