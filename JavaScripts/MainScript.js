@@ -30,7 +30,7 @@ function initSliders() {
             arrows: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: false,
+            autoplay: true,
             dots: true,
             fade: false,
             autoplaySpeed: 6000,
