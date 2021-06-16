@@ -1,4 +1,28 @@
-function InitSliders() {
+function sliderLayout() {
+    try {
+        var Slide = $('.MainSliderMaterials'),
+            Count = Slide.length, Dark = '#fff',
+            Light = '#000';
+        for (var i = 0; i < Count; i++) {
+            getElement = Slide.eq(i);
+            getAttr = getElement.attr('layout');
+            if (getAttr == 'light') {
+                getElement.find('.MainSliderParag').addClass('SliderDarkParg');
+                getElement.find('.MainSliderHref').addClass('SliderDarkLink');
+            }
+            else if (getAttr == 'dark') {
+                getElement.find('.MainSliderParag').addClass('SliderLightParg');
+                getElement.find('.MainSliderHref').addClass('SliderLightLink');
+            }
+        }
+    }
+
+    catch (e) {
+        // Insert catch code here to handle exception if neccessary.
+    }
+}
+
+function initSliders() {
     try {
         var MainSlider = $('#MainSlider');
         MainSlider.slick({
@@ -6,7 +30,7 @@ function InitSliders() {
             arrows: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: true,
+            autoplay: false,
             dots: true,
             fade: false,
             autoplaySpeed: 6000,
@@ -43,7 +67,7 @@ function InitSliders() {
     }
 }
 
-function SideMenu() {
+function sideMenu() {
     try {
         var MenuFlag = false;
         Body = $('#Body'),
@@ -115,7 +139,7 @@ function getCurrentTime() {
     }
 }
 
-function HeaderScroll() {
+function headerScroll() {
     try {
         var TopHeader = $('#TopHeader'),
             height = TopHeader.height(),
@@ -142,7 +166,7 @@ function HeaderScroll() {
     }
 }
 
-function ScrollTop() {
+function scrollTop() {
     try {
         var ScrollTop = $('#ScrollTop');
         window.onscroll = function (ev) {
@@ -167,7 +191,7 @@ function ScrollTop() {
     }
 }
 
-function ContainerParallax(Alpha) {
+function containerParallax(Alpha) {
     try {
         var initY = Alpha.offset().top,
             height = Alpha.height(),
@@ -189,7 +213,7 @@ function ContainerParallax(Alpha) {
 
 }
 
-function ItemParallax(Alpha) {
+function itemParallax(Alpha) {
     try {
         Alpha.mousemove(function (event) {
             var PosX, PosY, getHeight = $(this).height(),
@@ -232,7 +256,7 @@ function ItemParallax(Alpha) {
     }
 }
 
-function CopyToClipboard(containerid) {
+function copyClipboard(containerid) {
     try {
         if (document.selection) {
             var range = document.body.createTextRange();
@@ -254,7 +278,7 @@ function CopyToClipboard(containerid) {
 
 }
 
-function CodeNavigation() {
+function codeNavigation() {
 
     try {
         var HiddenField = $('#HiddenTxtField'),
@@ -323,7 +347,7 @@ function CodeNavigation() {
     }
 }
 
-function VideoPreview(Alpha) {
+function videoPreview(Alpha) {
     try {
         Alpha[0].autoplay = true;
         Alpha[0].loop = true;
@@ -342,19 +366,19 @@ function VideoPreview(Alpha) {
 
 }
 
-
 $(document).ready(function() {
 	try {
-		SideMenu();
-        InitSliders();
+        sideMenu();
+        sliderLayout();
+        initSliders();
         getCurrentTime();
-		HeaderScroll();
-        ScrollTop();
-        VideoPreview($('.Video'));
-        ContainerParallax($('.WebBanner'));
-        ItemParallax($('.BoxLink'));
-        ItemParallax($('.ItemsAreaMaterial'));
-        CodeNavigation();
+		headerScroll();
+        scrollTop();
+        videoPreview($('.Video'));
+        containerParallax($('.WebBanner'));
+        itemParallax($('.BoxLink'));
+        itemParallax($('.ItemsAreaMaterial'));
+        codeNavigation();
 	}
 	
 	catch(e){
