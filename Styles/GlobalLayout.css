@@ -195,7 +195,7 @@ body, #Body {
 }
 
 .VideoPreview {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     height: inherit;
     font-family: Roboto;
