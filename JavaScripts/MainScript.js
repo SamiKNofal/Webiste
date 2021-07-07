@@ -1,4 +1,5 @@
 function sliderLayout() {
+
     try {
         var Slide = $('.MainSliderMaterials'),
             Count = Slide.length, Dark = '#fff',
@@ -20,9 +21,11 @@ function sliderLayout() {
     catch (e) {
         // Insert catch code here to handle exception if neccessary.
     }
+
 }
 
 function initSliders() {
+
     try {
         var MainSlider = $('#MainSlider');
         MainSlider.slick({
@@ -65,9 +68,11 @@ function initSliders() {
     catch (e) {
         // Insert catch code here to handle exception if neccessary.
     }
+
 }
 
 function sideMenu() {
+
     try {
         var MenuFlag = false;
         Body = $('#Body'),
@@ -107,9 +112,11 @@ function sideMenu() {
     catch (e) {
         // Insert catch code here to handle exception if neccessary.
     }
+
 }
 
 function getCurrentTime() {
+
     try {
         var timeFlag = true,
             CurrentTime = $('.CurrentTime');
@@ -137,6 +144,7 @@ function getCurrentTime() {
     catch (e) {
         // Insert catch code here to handle exception if neccessary.
     }
+
 }
 
 function headerScroll() {
@@ -146,17 +154,14 @@ function headerScroll() {
             initY = TopHeader.offset().top,
             endY = initY + height;
             Header = $('#Header'),
-            HeaderContainer = $('#HeaderContainer');
 
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
             if (scroll > endY) {
                 Header.addClass('HeaderActive');
-                HeaderContainer.addClass('ActiveHeaderCont');
             }
             else {
                 Header.removeClass('HeaderActive');
-                HeaderContainer.removeClass('ActiveHeaderCont');
             }
         });
     }
@@ -192,6 +197,7 @@ function scrollTop() {
 }
 
 function containerParallax(Alpha) {
+
     try {
         var initY = Alpha.offset().top,
             height = Alpha.height(),
@@ -207,6 +213,7 @@ function containerParallax(Alpha) {
             }
         });
     }
+
     catch (e) {
         // Insert catch code here to handle exception if neccessary.
     }
@@ -214,6 +221,7 @@ function containerParallax(Alpha) {
 }
 
 function itemParallax(Alpha) {
+
     try {
         Alpha.mousemove(function (event) {
             var PosX, PosY, getHeight = $(this).height(),
@@ -254,9 +262,11 @@ function itemParallax(Alpha) {
     catch (e) {
         // Insert catch code here to handle exception if neccessary.
     }
+
 }
 
 function copyClipboard(containerid) {
+
     try {
         if (document.selection) {
             var range = document.body.createTextRange();
@@ -345,9 +355,11 @@ function codeNavigation() {
     catch (e) {
         // Insert catch code here to handle exception if neccessary.
     }
+
 }
 
 function videoPreview(Alpha) {
+
     try {
         Alpha[0].autoplay = true;
         Alpha[0].loop = true;
@@ -367,7 +379,8 @@ function videoPreview(Alpha) {
 }
 
 $(document).ready(function() {
-	try {
+
+    try {
         sideMenu();
         sliderLayout();
         initSliders();
