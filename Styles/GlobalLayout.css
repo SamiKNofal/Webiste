@@ -191,6 +191,7 @@ body, #Body {
     width: 100%;
     position: relative;
     background: #fff;
+    color: #000;
 }
 
 .VideoPreview {
