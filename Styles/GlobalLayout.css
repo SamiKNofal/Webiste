@@ -1331,9 +1331,9 @@ footer, #Footer {
         height: 85vw;
     }
 
-    .MainSliderImg:nth-of-type(1) {
+    /*.MainSliderImg:nth-of-type(1) {
         background-image: url('Images/MainSlider/Pic1.jpg') !important;
-    }
+    }*/
 
     .MainSliderLink {
         padding: 10vw 5vw;
