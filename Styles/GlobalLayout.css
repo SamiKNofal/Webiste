@@ -190,7 +190,7 @@ body, #Body {
 .VideoPreviewCont {
     width: 100%;
     position: relative;
-    background: #000;
+    background: #fff;
 }
 
 .VideoPreview {
@@ -1328,6 +1328,10 @@ footer, #Footer {
     /* Home layout */
     #MainSlider, .MainSliderMaterials {
         height: 85vw;
+    }
+
+    .MainSliderImg:nth-of-type(1) {
+        background-image: url('Images/MainSlider/Pic1.jpg') !important;
     }
 
     .MainSliderLink {
