@@ -1288,6 +1288,7 @@ footer, #Footer {
     header, #Header {
         height: 60px;
         padding: 0px 0px;
+        background: #0d0d0d;
         position: fixed;
     }
 
